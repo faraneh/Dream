@@ -1,0 +1,9 @@
+.MainPage {
+    width: 100%;
+    min-width: 1000px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+}
