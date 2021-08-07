@@ -1,10 +1,43 @@
 .navbar { 
     width: 100%;
-    height: 10rem;
+    height: 8rem;
+    text-align: center;
     position: fixed;
-    background-color: white;
-    z-index: 10;
-    margin: 0;
     top: 0;
     left: 0;
+    margin: 0 auto;
+    padding: 30px 30px 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    z-index: 10;
+    background-color: white;
+}
+.mainPageNavLinksUL { 
+    min-width: 400px;
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    margin-top: 22px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.mainPageNavLinksUL li { 
+    margin: 0 15px;
+    width: 90px;
+    box-sizing: border-box;
+}
+.mainPageNavLinksUL li:hover { 
+    color: rgb(57, 110, 255);
+    font-weight: 500;
+}
+.blueDot { 
+    width: 8px;
+    height: 8px;
+    border: 8px solid rgb(57, 110, 255);
+    box-sizing: border-box;
+    margin: 6px;
+    margin-right: 10px;
 }

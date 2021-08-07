@@ -1,7 +1,18 @@
-.mainPageFooter { 
+.mainPageFooter {
     width: 100%;
-    height: 10rem;
+    height: 6rem;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* border: 1px solid green; */
     background-color: white;
-    z-index: 10;
-    margin: 0;
+}
+.mainPageFooterSocialMedia { 
+    display: flex;
+    flex-flow: row;
 }

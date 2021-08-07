@@ -1,13 +1,129 @@
-.mainPageBody{
-    background-color: white;
-    padding: 0;
+.mainPageBodyBackground { 
+    text-align: center;
     margin: 0;
+    padding: 0;
+    height: 88vh;
+    min-height: 800px;
+
 }
-.mainPageBodyBackgroundColored { 
+.mainPageBodyCreamBoxLeft { 
+    /* position: absolute;
+    left: 0;
+    top: 0; */
     width: 40%;
     height: 100%;
+    background-color: rgb(227, 213, 200);
+    /* border: 1px solid purple; */
+}
+.mainPageCenterBox { 
+    width: 850px;
+    height: 600px;
+    margin: auto;
+    /* border: 1px solid pink; */
     position: absolute;
-    top: 0;
-    left:0;
-    background-color: rgb(227, 213, 200)
+    top: 12rem;
+    left: 25%;
+    background-color: white;
+    display: flex;
+    flex-flow: row;
+    box-sizing: border-box;
+}
+.mainPageCenterBoxLeft { 
+    background-color: rgb(243, 233, 227);
+    width: 400px;
+    height: 100%;
+    box-sizing: border-box;
+    box-shadow: -11px 9px 28px -1px rgba(105, 105, 105, 0.3);
+    -webkit-box-shadow: -11px 9px 28px -1px rgba(105, 105, 105, 0.3);
+    -moz-box-shadow: -11px 9px 28px -1px rgba(105, 105, 105, 0.3);
+}
+.mainPageCenterBoxRight {
+    width: 450px;
+    height: 100%;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.mainPageCenterBoxRight h2{ 
+    font-size: 5.5rem;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.mainPageCenterBoxRight h4 { 
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 10px 0 40px;
+}
+.btn1 { 
+    height: 35px;
+    width: 140px;
+    margin: 5px 10px 40px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(57, 110, 255);
+    border: 1px solid grey;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 3px;
+    color: white;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.btn1:hover { 
+    color: rgb(57, 110, 255);
+    background-color: white;
+    border: 2px solid rgb(57, 110, 255);
+    transform: scale(1.1);
+}
+.btn2 { 
+    height: 30px;
+    width: 140px;
+    margin: 5px 10px 40px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: white;
+    border: 1px solid grey;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-top: 3px;
+    color: rgb(59, 59, 59);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.btn2:hover { 
+    background-color: rgb(57, 110, 255);
+    color: white;
+    border: 2px solid rgb(57, 110, 255);
+    transform: scale(1.1);
+}
+.mainBodyDesc { 
+    line-height: 2rem;
+    color: rgb(59, 59, 59);
+    font-size: 1.1rem;
+}
+
+.personalImage { 
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin: 50px auto 20px;
+}
+.mainPageCenterBoxLeft h1 {
+    font-size: 1.8rem;
+    line-height: 1rem;
+    font-weight: 800;
+}
+.mainPageCenterBoxLeft hr { 
+    width: 4rem;
+    margin: 40px auto 30px;
+    border: 1px solid rgb(57, 110, 255);
+}
+.mainPageCenterBoxLeft h2 { 
+    font-weight: 300;
+    font-size: 1.1rem;
 }
