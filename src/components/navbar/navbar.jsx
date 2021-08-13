@@ -17,6 +17,20 @@ const navbar = (props) => {
                     <li>CONTACT</li>
                 </ul>
             </div>
+            <nav className={'nav'} role='navigation'>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                        <li>ABOUT ME</li>
+                        <li>RESUME</li>
+                        <li>PROJECTS</li>
+                        <li>CONTACT</li>
+                </ul>
+            </div>
+        </nav>
         </div>
      );
 }

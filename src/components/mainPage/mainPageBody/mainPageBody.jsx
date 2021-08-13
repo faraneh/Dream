@@ -1,6 +1,9 @@
 import React from 'react';
 import './mainPageBody.css'
 import personalImage from '/Users/farane/Documents/Codes/dream-GITHUB/src/assets/images/personalImage.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 const mainPageBody = (props) => {
     return ( 
@@ -13,6 +16,12 @@ const mainPageBody = (props) => {
                     <h1>Javadi</h1>
                     <hr className="blueLine" />
                     <h2>FRONT END DEVELOPER</h2>
+                    <div className="mainPageLeftBoxBottom">
+                        <a href="https://github.com/faraneh" rel = "noreferrer" target="_blank" ><FontAwesomeIcon icon={faGithubSquare} size="2x" style={{margin: '-10px 10 0 0', color: 'rgb(59, 59, 59)'}} /></a>
+                        <a href="https://www.linkedin.com/in/faraneh-javadinejad" rel = "noreferrer" target="_blank" ><FontAwesomeIcon icon={faLinkedin} size="2x" style={{margin: '-10px 10 0 0', color: 'rgb(59, 59, 59)'}} /></a>
+                        <a href="https://twitter.com/faranehjn" rel = "noreferrer" target="_blank" ><FontAwesomeIcon icon={faTwitterSquare} size="2x" style={{margin: '-10px 10 0 0', color: 'rgb(59, 59, 59)'}} /></a>
+                        <a className={'emailLink'} href={"mailto:faraneh.javadinejad@gmail.com"}><FontAwesomeIcon icon={faEnvelopeSquare} size="2x" style={{margin: '-10px 10 0 0', color: 'rgb(59, 59, 59)'}} /></a>
+                    </div>
                 </div>
                 <div className="mainPageCenterBoxRight">
                     <h2>Hello</h2>
