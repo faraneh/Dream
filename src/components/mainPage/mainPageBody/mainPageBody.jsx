@@ -4,6 +4,7 @@ import personalImage from '/Users/farane/Documents/Codes/dream-GITHUB/src/assets
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const mainPageBody = (props) => {
     return ( 
@@ -27,8 +28,12 @@ const mainPageBody = (props) => {
                     <h2>Hello</h2>
                     <h4>Here's who I am and what I do</h4>
                     <div className="mainPageButtons">
-                        <button className={'btn1'}>RESUME</button>
-                        <button className={'btn2'}>PROJECTS</button>
+                        <button className={'btn1'}><Link to={{
+                            pathname: '/resume'
+                        }} style={{textDecoration: 'none', color: 'inherit'}}>RESUME</Link></button>
+                        <button className={'btn2'}><Link to={{
+                            pathname: '/projects'
+                        }} style={{textDecoration: 'none', color: 'inherit'}}>PROJECTS</Link></button>
                     </div>
                     <p className={'mainBodyDesc'}>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.<br /><br />
  

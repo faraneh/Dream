@@ -4,12 +4,14 @@
     position: relative;
     display: flex;
     flex-flow: row;
-    padding: 25px;
-    padding-top: 40px;
+    padding: 20px;
+    padding-top: 30px;
     padding-left: 40px;
+    padding-bottom: 0;
     justify-content: space-between;
     box-sizing: border-box;
     background-color: white;
+    /* border: 1px solid red; */
 }
 .footerBox { 
     width: 230px;
@@ -20,11 +22,16 @@
     line-height: 0.4rem;
     font-size: 0.9rem;
     display: none;
+    /* border: 1px solid blue; */
+}
+.footerBox p { 
+    padding: 5px;
 }
 .mainPageFooterSocialMedia { 
     display: flex;
     flex-flow: row;
     cursor: pointer;
+    /* border: 1px solid red; */
 }
 .mainPageFooterSigniture {
     width: 300px;
@@ -35,10 +42,15 @@
     font-size: 0.8rem;
     box-sizing: border-box;
     margin-top: 2px;
+    padding: 20px;
+    /* border: 1px solid red; */
 }
 .emailLink { 
     color: inherit;
-    text-decoration: none; 
+    text-decoration: none;
+    font-size: 0.9rem;
+    transform: translateY(-10px);
+    /* border: 1px solid green;  */
 }
 
 

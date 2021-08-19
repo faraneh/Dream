@@ -1,0 +1,52 @@
+.resume { 
+    text-align: center;
+    padding: 0;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    background-color:rgb(227, 213, 200);
+}
+
+.resumeBox { 
+    width: 900px;
+    min-height: 400px;
+    background-color: white;
+    box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
+    -webkit-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
+    -moz-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
+    margin: 20px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+}
+.resumeHeader { 
+    /* border: 1px solid red; */
+    width: 130px;
+    height: 2rem;
+    margin: 50px auto 100px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.resumeHeader h1 { 
+    margin: 0;
+    margin-left: -5px;
+    font-weight: 800;
+    font-size: 2rem;
+    
+}
+.resumeSubTitle { 
+    text-align: left;
+    width: 900px;
+    margin: 80px auto 50px;
+    font-weight: 800;
+    font-size: 1.7rem;
+    padding-left: 5px;
+}
+.resumeNextLine { 
+    width: 900px;
+    margin: auto;
+    height: 4rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}

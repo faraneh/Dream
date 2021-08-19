@@ -2,9 +2,8 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 88vh;
-    min-height: 800px;
-
+    height: 87vh;
+    box-sizing: border-box;
 }
 .mainPageBodyCreamBoxLeft { 
     /* position: absolute;
@@ -17,11 +16,11 @@
 }
 .mainPageCenterBox { 
     width: 900px;
-    height: 580px;
+    height: 600px;
     margin: auto;
     /* border: 1px solid pink; */
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 5%;
     background-color: white;
     display: flex;
@@ -127,7 +126,7 @@
 .mainPageCenterBoxLeft h2 { 
     font-weight: 300;
     font-size: 1.1rem;
-    margin-bottom: 60px;
+    margin-bottom: 73px;
 }
 .mainPageLeftBoxBottom { 
     background-color:rgb(255, 251, 248);
@@ -141,11 +140,11 @@
 @media (min-width: 1100px) { 
     .mainPageCenterBox { 
         width: 900px;
-        height: 580px;
+        height: 600px;
         margin: auto;
         /* border: 1px solid pink; */
         position: absolute;
-        top: 12rem;
+        top: 13rem;
         left: 25%;
         background-color: white;
         display: flex;
