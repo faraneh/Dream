@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     height: 87vh;
+    min-height: 850px;
     box-sizing: border-box;
 }
 .mainPageBodyCreamBoxLeft { 

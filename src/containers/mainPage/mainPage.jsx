@@ -5,9 +5,10 @@ import MainPageFooter from '../../components/mainPage/mainPageFooter/mainPageFoo
 import MainPageBody from '../../components/mainPage/mainPageBody/mainPageBody';
 import { Route, Switch } from 'react-router-dom';
 import Resume from '../../components/resume/resume';
+import ContactMe from '../../components/contactMe/contactMe';
 
 class MainPage extends Component {
-    state = {  }
+    state = { }
     render() { 
         return ( 
             <div className={'MainPage'}>
@@ -17,6 +18,7 @@ class MainPage extends Component {
                 {/* <MainçPageBody /> */}
                 <Switch>
                     <Route path="/resume" component={Resume} />
+                    <Route path="/contact-me" component={() => <ContactMe />} />
                     <Route path="/" exact component={MainPageBody} />
                 </Switch>
                 {/* and absolute footer */}

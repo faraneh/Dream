@@ -1,7 +1,7 @@
 .mainPageFooter {
     width: 100vw;
     text-align: center;
-    position: relative;
+    position: absolue;
     display: flex;
     flex-flow: row;
     padding: 20px;
