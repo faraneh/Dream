@@ -1,6 +1,6 @@
 import React from 'react';
 import './mainPageBody.css'
-import personalImage from '/Users/farane/Documents/Codes/dream-GITHUB/src/assets/images/personalImage.jpg';
+import personalImage from '../../../assets/images/personalImage.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
