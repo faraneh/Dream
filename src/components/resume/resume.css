@@ -7,8 +7,8 @@
 }
 
 .resumeBox { 
-    width: 900px;
-    min-height: 400px;
+    width: 700px;
+    min-height: 350px;
     background-color: white;
     box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
     -webkit-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
@@ -36,17 +36,53 @@
 }
 .resumeSubTitle { 
     text-align: left;
-    width: 900px;
+    width: 700px;
     margin: 80px auto 50px;
     font-weight: 800;
     font-size: 1.7rem;
     padding-left: 5px;
 }
 .resumeNextLine { 
-    width: 900px;
+    width: 700px;
     margin: auto;
     height: 4rem;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+}
+.experience{
+    display: flex;
+    flex-flow: row;
+}
+.experienceOne {
+    /* border: 1px solid red; */
+    width: 40%;
+    padding: 50px 30px;
+    box-sizing: border-box;
+}
+.experienceOne h2 { 
+    color: rgb(57, 110, 255);
+    font-size: 1.4rem;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.experienceOne h3 { 
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 1.7rem;
+}
+.experienceTwo {
+    /* border: 1px solid red; */
+    width: 60%;
+    padding: 60px 30px;
+    line-height: 2rem;
+    box-sizing: border-box;
+}
+.resumeFindMore { 
+    width: 700px;
+    margin: auto;
+    font-size: 0.8rem;
+    text-align: left;
+    line-height: 1.5rem;
 }

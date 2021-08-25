@@ -24,11 +24,11 @@
 }
 .InputElement:hover{
     border: none;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgb(57, 110, 255);
 }
 .InputElement:focus{
     border: none;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid rgb(57, 110, 255);
 }
 .contactMeTextarea { 
     min-height: 150px;
