@@ -1,0 +1,68 @@
+.projectBox { 
+    width: 700px;
+    min-height: 350px;
+    background-color: white;
+    box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
+    -webkit-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
+    -moz-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
+    margin: 20px auto 80px;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-flow: row;
+}
+.projectBoxLeft{
+    width: 350px;
+    height: 350px;
+    box-sizing:border-box;
+    padding:0;
+    /* border: 1px solid red; */
+}
+.projectBoxRight {
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.projectBoxRight img { 
+    width: 350px;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+    cursor:pointer;
+}
+
+.projectBoxLeftHeader {
+    height: 3rem;
+    width: 350px;
+    margin: 0;
+    margin-top: 50px;
+    box-sizing:border-box;
+    text-align: left;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: row;
+}
+.projectBoxLeftHeaderBlue {
+    width: 10px;
+    height: 3rem;
+    background-color:rgb(57, 110, 255);
+    
+}
+.projectBoxLeftHeaderTitle {
+    font-size:1.5rem;
+    font-weight: 800;
+    width: 340px;
+    height: 3rem;
+    /* border: 1px solid red; */
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+    color: rgb(57, 110, 255);
+}
+.projectsDescription {
+    line-height: 1.5rem;
+    padding: 40px;
+}
