@@ -6,7 +6,7 @@ import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-b
 
 const mainPageFooter = (props) => {
     return ( 
-        <div className={"mainPageFooter"}>
+        <div className={"mainPageFooter"} style={props.style} >
             <div className="mainPageFooterSigniture">
                 <p style={{margin: 0}}>© 2021 by Farane Javadi.</p><br />
                 <p style={{margin: 0}}>Proudly created in CANADA</p>

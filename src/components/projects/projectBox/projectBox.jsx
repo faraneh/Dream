@@ -5,8 +5,7 @@ import { Link } from 'react-router-dom';
 
 const projectBox = (props) => {
 
-    const pathName = ['/projects' , props.pathName].join('');
-    console.log(pathName);
+    const pathNameAdd = props.pathName;
 
     return ( 
         <div className={"projectBox"}>
@@ -22,9 +21,7 @@ const projectBox = (props) => {
                     {props.description}
                 </div>
             </div>
-            <div className="projectBoxRight"><Link to={{ 
-                    pathname: {pathName},
-                 }}>
+            <div className="projectBoxRight"><Link to={pathNameAdd} >
                      <img src={props.image} alt={'projectImage'}/>
                  </Link>
             </div>

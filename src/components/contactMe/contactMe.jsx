@@ -3,6 +3,8 @@ import './contactMe.css';
 import ContactMeInput from './contactMeInput/contactMeInput';
 import axios from '../../axios-orders';
 import emailjs from 'emailjs-com';
+import MainPageFooter from '../mainPage/mainPageFooter/mainPageFooter';
+import Navbar from '../navbar/navbar';
 
 class ContactMe extends Component {
     state = { 
@@ -146,6 +148,7 @@ class ContactMe extends Component {
 
         return ( 
             <div className="contactMe">
+            <Navbar className={'mainPageNavbarStyle'} /> 
             <div className="contactMeHeader"><div className="blueDot" style={{marginTop: 12}} /><h1>Let's talk</h1></div>
                 <div className="contactMeForm">
                     <form style={{width: '100%'}} onSubmit={this.contactMeHandler} onReset={this.contactMeResetHandler} >
@@ -164,7 +167,9 @@ class ContactMe extends Component {
                         <button type ="reset" className={'btn2'}>CLEAR</button>
                     </form>
                 </div>
+                <MainPageFooter style={{position: 'relative'}} />
             </div> 
+            
          );
     }
 }
