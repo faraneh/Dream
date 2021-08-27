@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import './projects.css';
 import ProjectBox from './projectBox/projectBox';
+import Navbar from '../navbar/navbar';
+import MainPageFooter from '../mainPage/mainPageFooter/mainPageFooter';
 
 
-class projects extends Component {
+class Projects extends Component {
     state = {
         projectList:[
             {
                 name: 'Todo List',
                 description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ut? Ipsum, architecto. Rem amet libero corrupti! Quia ipsum explicabo ipsam soluta, ullam unde voluptatibus placeat ratione. Itaque earum nostrum saepe!',
                 imageURL: 'https://images.unsplash.com/photo-1610641564155-8ea9845579dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-                componentName: '/todolist',
+                componentName: "/todolist",
             },
             {
                 name: 'Resto',
@@ -30,15 +32,17 @@ class projects extends Component {
         const stateArray =[...this.state.projectList]
         return ( 
             <React.Fragment>
+            <Navbar className={'mainPageNavbarStyle'} />
             <div className={"projects"}>
                 <div className="projectsHeader"><div className="blueDot" style={{marginTop: 12}} /><h1>Projects</h1></div>
                 {stateArray.map(project => 
-                    <ProjectBox name={project.name} description={project.description} image={project.imageURL} pathName={project.componentName} />
+                    <ProjectBox name={project.name} description={project.description} image={project.imageURL} pathName={project.componentName} key={project.name} />
                 )}
             </div>
+            <MainPageFooter style={{position: 'relative', height: '8rem'}} />
             </React.Fragment>
          );
     }
 }
  
-export default projects;
+export default Projects;

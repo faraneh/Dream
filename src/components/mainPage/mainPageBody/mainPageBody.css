@@ -1,32 +1,46 @@
-.mainPageBodyBackground { 
+.mainPage { 
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 85vh;
-    min-height: 830px;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100vw;
+    overflow-x: scroll;
+}
+.mainPageBodyBackground { 
+    position: absolute;
+    width: 100vw;
+    overflow-X:scroll;
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    max-height: 100vh;
     box-sizing: border-box;
 }
 .mainPageBodyCreamBoxLeft { 
-    /* position: absolute;
+    position: absolute;
     left: 0;
-    top: 0; */
+    top: 0;
     width: 40%;
-    height: 100%;
+    height: 100vh;
     background-color: rgb(227, 213, 200);
-    /* border: 1px solid purple; */
 }
 .mainPageCenterBox { 
     width: 900px;
     height: 600px;
     margin: auto;
-    /* border: 1px solid pink; */
-    position: absolute;
-    top: 20%;
-    left: 5%;
     background-color: white;
     display: flex;
     flex-flow: row;
     box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
 }
 .mainPageCenterBoxLeft { 
     background-color: rgb(243, 233, 227);
@@ -139,14 +153,22 @@
 }
 
 @media (min-width: 1100px) { 
+    .mainPageNavbarStyle { 
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    .mainPageFooterStyle { 
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+    }
     .mainPageCenterBox { 
         width: 900px;
         height: 600px;
         margin: auto;
-        /* border: 1px solid pink; */
-        position: absolute;
-        top: 12rem;
-        left: 25%;
         background-color: white;
         display: flex;
         flex-flow: row;

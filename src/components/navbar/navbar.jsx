@@ -27,10 +27,10 @@ const navbar = (props) => {
                 <span></span>
                 <span></span>
                 <ul id="menu">
-                        <li>ABOUT ME</li>
-                        <li>RESUME</li>
-                        <li>PROJECTS</li>
-                        <li>CONTACT</li>
+                <li><NavLink to= "/" exact activeStyle={{ fontWeight: 600, color: 'rgb(57, 110, 255)' }} style={{ textDecoration: 'none', color : 'black' }} >ABOUT ME</NavLink></li>
+                    <li><NavLink to= "/resume" exact activeStyle={{ fontWeight: 600, color: 'rgb(57, 110, 255)' }} style={{ textDecoration: 'none', color : 'black' }} >RESUME</NavLink></li>
+                    <li><NavLink to= "/projects" exact activeStyle={{ fontWeight: 600, color: 'rgb(57, 110, 255)' }} style={{ textDecoration: 'none', color : 'black' }} >PROJECTS</NavLink></li>
+                    <li><NavLink to= "/contact-me" exact activeStyle={{ fontWeight: 600, color: 'rgb(57, 110, 255)' }} style={{ textDecoration: 'none', color : 'black' }} >CONTACT ME</NavLink></li>
                 </ul>
             </div>
         </nav>

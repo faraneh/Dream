@@ -5,9 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import Navbar from '../../navbar/navbar';
+import MainPageFooter from '../mainPageFooter/mainPageFooter';
+// import reactDom from 'react-dom';
 
 const mainPageBody = (props) => {
     return ( 
+        <div className={'mainPage'}>
+        <Navbar className={'mainPageNavbarStyle'} /> 
         <div className="mainPageBodyBackground">
             <div className="mainPageBodyCreamBoxLeft"></div>
             <div className="mainPageCenterBox">
@@ -35,11 +40,11 @@ const mainPageBody = (props) => {
                             pathname: '/projects'
                         }} style={{textDecoration: 'none', color: 'inherit'}}>PROJECTS</Link></button>
                     </div>
-                    <p className={'mainBodyDesc'}>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.<br /><br />
- 
- I’m a great place for you to tell a story and let your users know a little more about you.</p>
+                    <p className={'mainBodyDesc'}>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.<br /><br />I’m a great place for you to tell a story and let your users know a little more about you.</p>
                 </div>
             </div>
+        </div>
+        <MainPageFooter style={{position: 'fixed', bottom: 0, height: '8rem'}} />
         </div>
      );
 }
