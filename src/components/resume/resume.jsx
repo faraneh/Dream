@@ -8,8 +8,8 @@ const resume = () => {
             <div className="resumeNextLine"><h2 className={"resumeSubTitle"} style={{margin: 0}}>Experience</h2><button className={'btn1'} style={{width: 200, fontSize: "0.9rem", padding: 0}}>DOWNLOAD CV</button></div>
             <div className="resumeBox experience">
                 <div className="experienceOne">
-                    <h2>2019-2020</h2>
-                    <h3>Front End developer</h3>
+                    <h2>2019 - 2020</h2>
+                    <h3>Front End Developer</h3>
                 </div>
                 <div className="experienceTwo">
                     <ul>
@@ -22,7 +22,7 @@ const resume = () => {
             <div className="resumeBox experience">
                 <div className="experienceOne">
                     <h2>2018-2019</h2>
-                    <h3>Junior Front End developer</h3>
+                    <h3>Junior Front End Developer</h3>
                 </div>
                 <div className="experienceTwo">
                     <ul>
