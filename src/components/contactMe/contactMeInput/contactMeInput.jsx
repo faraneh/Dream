@@ -17,7 +17,8 @@ const contactMeInput = (props) => {
                 {...props.elementConfig} 
                 className={contactMeInputClasses.join(' ')} 
                 value={props.value}
-                onChange={props.contactMeChanged} />;
+                onChange={props.contactMeChanged}
+                name={props.name} />;
             break;
         case ('textarea'):
             inputElement = <textarea 
@@ -25,20 +26,22 @@ const contactMeInput = (props) => {
                 className={contactMeInputClassesTxtArea.join(' ')} 
                 cols={2} 
                 value={props.value}
-                onChange={props.contactMeChanged} />;
+                onChange={props.contactMeChanged}
+                name={props.name} />;
             break;
         default: 
             inputElement = <input 
                 {...props.elementConfig} 
                 className={contactMeInputClasses} 
                 value={props.value}
-                onChange={props.contactMeChanged} />;
+                onChange={props.contactMeChanged}
+                name={props.name} />;
             break;
     }
 
     return ( 
         <div className={'contactMeInput'}>
-            <label className={'Label'} name={props.name}>{props.label}</label>
+            <label className={'Label'}>{props.label}</label>
             {inputElement}
         </div>
      );

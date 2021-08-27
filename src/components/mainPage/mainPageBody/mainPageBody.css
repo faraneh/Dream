@@ -2,8 +2,8 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 87vh;
-    min-height: 850px;
+    height: 85vh;
+    min-height: 830px;
     box-sizing: border-box;
 }
 .mainPageBodyCreamBoxLeft { 
@@ -21,7 +21,7 @@
     margin: auto;
     /* border: 1px solid pink; */
     position: absolute;
-    top: 22%;
+    top: 20%;
     left: 5%;
     background-color: white;
     display: flex;
@@ -145,7 +145,7 @@
         margin: auto;
         /* border: 1px solid pink; */
         position: absolute;
-        top: 13rem;
+        top: 12rem;
         left: 25%;
         background-color: white;
         display: flex;
