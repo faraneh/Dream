@@ -1,0 +1,76 @@
+.TBsubscribtion {
+    width: 380px;
+    height: 370px;
+    margin: 0;
+    margin-top: 20px;
+    border: 2px solid rgb(235, 235, 235);
+    box-shadow: rgba(104, 104, 104, 0.2) 0px 2px 8px 0px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+.TBiconHiking {
+    color: #91AFA0;
+}
+.TBsubTitle { 
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #242424;
+}
+.TBemailInput {
+    margin-top: -10px;
+    width: 320px;
+    height: 40px;
+    border: 1px solid #628A76;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    outline-color: none;
+    padding-left: 5px;
+}
+.TBemailInput:focus { 
+    outline-style: none;
+}
+.TBemailInputCon { 
+    background-color: #E9E9E9;
+    color: #253a2c;
+    font-weight: 600;
+    margin-top: -10px;
+    width: 320px;
+    height: 40px;
+    border: 1px solid #C1BEB6;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    outline-color: none;
+    padding-left: 5px;
+}
+.TBsubConfirm { 
+    background-color: transparent;
+    color: #628A76;
+    border: 2px solid #628A76;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 40px;;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.TBsubConfirm:hover { 
+    background-color: #628A76;
+    color: #FCFCFC;
+    transition: background-color 0.5s ease;
+}
+.TBsubConfirmed { 
+    background-color: #2F4937;
+    color: #FCFCFC;
+    border: 2px solid #2F4937;
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+}

@@ -6,8 +6,12 @@ const contactMeInput = (props) => {
     let inputElement = null;
     const contactMeInputClasses = ['InputElement'];
     const contactMeInputClassesTxtArea = [...contactMeInputClasses, 'contactMeTextarea'];
+    const label = props.title;
 
     if(props.invalid && props.touched) { 
+        contactMeInputClasses.push('Invalid');
+    }
+    if(props.emailAlertDisplay === "block" && props.key === 'email') { 
         contactMeInputClasses.push('Invalid');
     }
 
@@ -40,10 +44,13 @@ const contactMeInput = (props) => {
     }
 
     return ( 
-        <div className={'contactMeInput'}>
-            <label className={'Label'}>{props.label}</label>
-            {inputElement}
-        </div>
+        <React.Fragment>
+            <div className={'contactMeInput'}>
+                <h5 className={"contactMeInputTitle"}>{label}</h5>
+                {inputElement}
+            </div>
+        </React.Fragment>
+        
      );
 }
  

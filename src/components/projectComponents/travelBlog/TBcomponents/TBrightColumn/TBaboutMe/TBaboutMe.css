@@ -1,0 +1,36 @@
+.TBaboutMe { 
+    width: 380px;
+    height: 550px;
+    margin: 0 auto 20px 0;
+    border: 2px solid rgb(235, 235, 235);
+    box-shadow: rgba(104, 104, 104, 0.2) 0px 2px 8px 0px;
+}
+.TBaboutMe img { 
+    width: 170px;
+    height: 170px;
+    border: none;
+    border-radius: 50%;
+    margin: 40px auto 0;
+}
+.TBaboutMe p {
+    width: 300px;
+    margin : 30px auto 0;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+}
+.TBaboutMeIcon { 
+    background-color: transparent;
+    color: #628A76;
+    border: 2px solid #628A76;
+    width: 230px;
+    height: 70px;
+    margin-top: 40px;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+.TBaboutMeIcon:hover { 
+    background-color: #628A76;
+    color: #FCFCFC;
+    transition: background-color 0.5s ease;
+}

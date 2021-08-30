@@ -1,0 +1,76 @@
+.TBbannerBody{
+    width: 100%;
+    min-width: 1200px;
+    min-height: 110vh;
+    /* border: 1px solid blue; */
+    background-image: linear-gradient(transparent 100%, #FCFCFC 0%), 
+    linear-gradient(to bottom, transparent 0%, #FCFCFC 100%),URL('https://images.unsplash.com/photo-1550493462-d94f77de817e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c3dpdHplcmxhbmR8ZW58MHwwfDB8d2hpdGV8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-position-x: center;
+    background-blend-mode: saturation, lighten;
+}
+.TBnav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: 4rem;
+    text-align: center;
+    padding-top: 25px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.TBnavLink { 
+    cursor: pointer;
+}
+.TBlogo  {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    font-size: 2rem;
+    height: 3rem;
+    margin-top: 5px;
+}
+.TBlogo p {
+    font-size : 2rem;
+    height:3rem;
+    margin: 0;
+    margin-left: 10px;
+    font-family: 'Aclonica', sans-serif;
+
+}
+.TBnavLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+.TBnavLink{
+    margin: 0 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.TBmainBannerText {
+    margin: 39vh auto 0;
+}
+.TBmainBannerTextMain {
+    font-size: 7rem;
+    margin-bottom: 0;
+    font-family: 'Merriweather', serif;
+}
+.TBmainBannerTextDesc {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 36px;
+    text-shadow: 0px 0px 21px rgba(255, 255, 255, 1),0px 0px 21px rgba(255, 255, 255, 1),0px 0px 21px rgba(255, 255, 255, 1),0px 0px 21px rgba(255, 255, 255, 1);
+}
+.TBbannerButton{
+    height: 65px;
+    width: 170px;
+    background-color: #628A76;
+    border:none;
+    box-shadow: 2px 2px 5px rgb(105, 105, 105);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}

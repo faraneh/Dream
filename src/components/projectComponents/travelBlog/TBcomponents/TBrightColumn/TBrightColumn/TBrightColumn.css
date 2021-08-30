@@ -1,0 +1,8 @@
+.TBRightColumn {
+    height: 200vh;
+    width: 400px;
+    /* border: 1px solid purple; */
+    margin: 0;
+    padding: 0;
+    background-color: #FCFCFC;
+}

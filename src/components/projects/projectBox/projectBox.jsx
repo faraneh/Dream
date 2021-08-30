@@ -21,7 +21,7 @@ const projectBox = (props) => {
                     {props.description}
                 </div>
             </div>
-            <div className="projectBoxRight"><Link to={pathNameAdd} >
+            <div className="projectBoxRight"><Link to={pathNameAdd}>
                      <img src={props.image} alt={'projectImage'}/>
                  </Link>
             </div>

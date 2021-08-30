@@ -4,7 +4,7 @@
     padding-top: 150px;
     padding-bottom: 0;
     background-color:rgb(227, 213, 200);
-    height:fit-content
+    height:fit-content;
 }
 
 .contactMeForm { 
@@ -16,7 +16,6 @@
     -moz-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
     margin: 20px auto 50px;
     padding: 40px;
-    padding-top: 70px;
     box-sizing: border-box;
     text-align: left;
 
@@ -36,4 +35,16 @@
     margin-left: -5px;
     font-weight: 800;
     font-size: 2rem;   
+}
+.contactMeThankYou {
+    width: 700px;
+    min-height: 400px;
+    background-color: white;
+    box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
+    -webkit-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
+    -moz-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
+    margin: 20px auto 200px;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: left;
 }

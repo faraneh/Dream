@@ -1,12 +1,8 @@
 .contactMeInput { 
-    width: 95%;
+    width: 100%;
     padding: 10px;
     box-sizing: border-box;
-}
-.Label { 
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
+    
 }
 
 .InputElement { 
@@ -17,7 +13,8 @@
     display: block;
     width: 600px;
     box-sizing: border-box;
-    margin-bottom: 40px;
+    margin: 0;
+    margin-bottom: 30px;
     font-family: sans-serif;
     font-size: 1.1rem;
     line-height: 1.4rem;
@@ -35,9 +32,13 @@
     max-height: 150px;
     min-width: 600px;
     max-width: 600px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .Invalid{ 
     border-bottom: 2px solid rgb(185, 0, 0);
+}
+.contactMeInputTitle { 
+    font-size: 1rem;
+    font-weight: 300;
 }

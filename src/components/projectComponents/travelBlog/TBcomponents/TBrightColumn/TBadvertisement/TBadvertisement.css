@@ -1,0 +1,26 @@
+.TBadvertisement { 
+    width: 380px;
+    height: 380px;
+    margin: 0;
+    border: 2px solid rgb(235, 235, 235);
+    box-shadow: rgba(104, 104, 104, 0.2) 0px 2px 8px 0px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+.TBadImage {
+    width: 330px;
+    height: 330px;
+    background: URL('https://images.unsplash.com/photo-1541544158185-85543842ad35?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTE2fHx0cmF2ZWx8ZW58MHwyfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -15px auto;
+    background-blend-mode:darken;
+    border-radius: 3px;
+}
+.TBadImage p {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white; 
+    line-height: 320px;
+    text-shadow: 1px 1px 20px black;
+}

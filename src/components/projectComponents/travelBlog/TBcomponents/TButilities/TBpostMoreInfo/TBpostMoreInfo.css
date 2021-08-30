@@ -1,0 +1,181 @@
+.TBpostMoreInfo {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    min-height: 1950px;
+    margin: 0;
+    margin-right: 20px;
+    border: 2px solid rgb(235, 235, 235);
+    box-shadow: rgba(104, 104, 104, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+.TBmoreInfoImage { 
+    width: 700px;
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin : 0 auto;
+    border-radius: 3px;
+}
+.TBmoreInfoButtons { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.TBmoreInfoArrows { 
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+}
+.TBgoBackButton { 
+    background-color: transparent;
+    color: #628A76;
+    border: 2px solid #628A76;
+    width: 100px;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px;
+    border-radius: 3px;
+}
+.TBgoBackButton:hover { 
+    background-color: #628A76;
+    color: #FCFCFC;
+    transition: background-color 0.5s ease;
+}
+.TBgoBackButtonDisactive { 
+    background-color: transparent;
+    color: #C1BEB6;
+    border: 2px solid #C1BEB6;
+    width: 100px;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 10px;
+    margin: 10px;
+    border-radius: 3px;
+}
+.TBmoreInfoTitle {
+    font-size: 2rem;
+    margin : 20px 15px;
+    text-align: left;
+    font-weight: 800;
+}
+.TBmoreInfoText {
+    line-height: 2rem;
+    margin : 20px 15px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.TBimageGallery {
+    position: relative;
+    min-width: 700px;
+    height: 320px;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+    /* border: 1px solid red; */
+    margin-bottom: 750px;
+}
+.TBimageBoxImageGallery{
+    min-width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 5px;
+    border: 1px solid #C1BEB6;
+    word-wrap: break-word;
+}
+.TBnameQ {
+    display: flex;
+    flex-direction: row;
+    width: 710px;
+    /* border: 1px solid red; */
+}
+.TByourName {
+    color: #2F4937;
+    font-size: 1.1rem;
+    margin-left: 5px;
+    margin-right: 0;
+    /* border: 1px solid red; */
+}
+.TBnameInput {
+    height: 2rem;
+    margin: auto;
+    margin-left: 5px;
+    width: 600px;
+    outline-color: #91AFA0;
+    border: 1px solid #C1BEB6;
+    font-size: 1rem;
+    padding: 5px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+.TBnameInput:focus { 
+    outline: none !important;
+    border-color: #91AFA0;
+    border-width: 2px;
+}
+.TBmoreInfoComment {
+    width: 710px;
+    height: 600px;
+    position: absolute;
+    bottom : 5px;
+    text-align: left;
+    /* border: 1px solid red; */
+}
+.TBmoreInfoCommentTitle {
+    margin-left: 5px;
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2F4937;
+}
+.TBmoreInfoCommentArea {
+    outline-color: #91AFA0;
+    border-color: #C1BEB6;
+    max-width: 705px;
+    min-width: 705px;
+    min-height: 80px;
+    max-height: 80px;
+    overflow: scroll;
+    font-size: 1rem;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.TBmoreInfoCommentArea:focus { 
+    outline: none !important;
+    border-color: #91AFA0;
+    border-width: 2px;
+}
+.TBcommentsbox { 
+    position: flex;
+    flex-direction: column;
+    max-height: 350px;
+    overflow: scroll;
+}
+.TBcommentBox {
+    position: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    min-width: 500px;
+    max-width: 660px;
+    background-color: #628A76;
+    color: #FCFCFC;
+    font-size: 1.1rem;
+    padding: 10px;
+    padding-bottom: 10px;;
+    line-height: 1.5rem;
+    border-radius: 3px;
+}

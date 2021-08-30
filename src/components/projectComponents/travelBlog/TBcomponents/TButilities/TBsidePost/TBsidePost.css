@@ -1,0 +1,31 @@
+.TBsidePost {
+    width: 360px;
+    height: 115px;
+    margin: 0 auto 5px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    /* border: 1px solid red; */
+}
+.TBsideImage { 
+    width: 110px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+.TBsideHeader { 
+    width: 200px;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: 700;
+}
+.TBsideDate { 
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: rgb(184, 184, 184);
+    text-align: left;
+    margin-left: 10px;
+}
