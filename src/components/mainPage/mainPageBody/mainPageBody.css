@@ -117,9 +117,9 @@
     transform: scale(1.1);
 }
 .mainBodyDesc { 
-    line-height: 2rem;
+    line-height: 1.8rem;
     color: rgb(59, 59, 59);
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .personalImage { 
@@ -141,7 +141,7 @@
 .mainPageCenterBoxLeft h2 { 
     font-weight: 300;
     font-size: 1.1rem;
-    margin-bottom: 73px;
+    margin-bottom: 75px;
 }
 .mainPageLeftBoxBottom { 
     background-color:rgb(255, 251, 248);

@@ -21,24 +21,30 @@ const resume = () => {
             <div className="resumeBox experience">
                 <div className="experienceOne">
                     <h2>2019 - 2020</h2>
-                    <h3>Front End Developer</h3>
+                    <h3 style={{marginBottom: 0}}>Front End Developer</h3>
+                    <h4 style={{ margin: 0, marginTop: 15, fontWeight: 300}}>(Sina Group)</h4>
                 </div>
                 <div className="experienceTwo">
                     <ul>
-                        <li>Using HTML5, CSS, Javascript and jQuery</li>
-                        <li>Building reusable code for future use</li>
-                        <li>Collaborated with product team members to implement new feature developments</li>
+                        <li>I build website UI based on wireframes and mockups (or best practices, bestseller website templates), also in some projects I designed elements with Figma.</li>
+                        <li>Using HTML5, CSS, Javascript, jQuery, Bootstrap, Reactjs, Redux as main languages</li>
+                        <li>I collaborate with product team members to implement new feature developments (Github based code communication)</li>
+                        <li>Used Agile every basis days</li>
                     </ul>
                 </div>
             </div>
             <div className="resumeBox experience">
                 <div className="experienceOne">
                     <h2>2018-2019</h2>
-                    <h3>Junior Front End Developer</h3>
+                    <h3 style={{marginBottom: 0}}>Junior Front End Developer</h3>
+                    <h4 style={{ margin: 0, marginTop: 15, fontWeight: 300}}>(Alvares Group)</h4>
                 </div>
                 <div className="experienceTwo">
                     <ul>
-                        <li>Using HTML5, CSS, Bootstrap for website template</li>
+                        <li>developing website UI and functionalities with HTML5, CSS, Bootstrap and JS and jQuery</li>
+                        <li>Designed based on mockups</li>
+                        <li>Also experienced using Wordpress services and templates</li>
+                        <li>Communications with team made with Jira</li>
                     </ul>
                 </div>
             </div>
@@ -51,7 +57,7 @@ const resume = () => {
                 <div className="experienceTwo">
                     <ul>
                         <li style={{listStyle: 'none'}}><h3>BSc of Computer engineering / Software</h3></li>
-                        <li style={{listStyle: 'none'}}>DIAU</li>
+                        <li style={{listStyle: 'none'}}>Azad University</li>
                     </ul>
                 </div>
             </div>
@@ -62,7 +68,7 @@ const resume = () => {
                 <div className="experienceTwo">
                     <ul>
                         <li style={{listStyle: 'none'}}><h3>MBA (intensive program)</h3></li>
-                        <li style={{listStyle: 'none'}}>TEHRAN UNIVERSITY</li>
+                        <li style={{listStyle: 'none'}}>Tehran University</li>
                     </ul>
                 </div>
             </div>
@@ -70,16 +76,19 @@ const resume = () => {
             <h2 className={"resumeSubTitle"}>Programming Languages</h2>
             <div className="resumeBox experience"  style={{height: 250, paddingTop: 20}}>
                 <ul>
-                    <li className={'resumeList'}><div className="blueDotResume" /><p><b>HTML5, CSS3, Bootstrap</b></p></li>
-                    <li className={'resumeList'}><div className="blueDotResume" /><p><b>Javascript, jQuary, node.js</b></p></li>
                     <li className={'resumeList'}><div className="blueDotResume" /><p><b>React, Redux</b></p></li>
+                    <li className={'resumeList'}><div className="blueDotResume" /><p><b>node.js</b></p></li>
+                    <li className={'resumeList'}><div className="blueDotResume" /><p><b>Javascript, jQuary</b></p></li>
+                    <li className={'resumeList'}><div className="blueDotResume" /><p><b>HTML5, CSS3, Bootstrap</b></p></li>
                 </ul>
             </div>
-            <h2 className={"resumeSubTitle"}>Softwares</h2>
+            <h2 className={"resumeSubTitle"}>Core Skills</h2>
             <div className="resumeBox experience"  style={{height: 200, paddingTop: 20}}>
                 <ul>
-                    <li className={'resumeList'}><div className="blueDotResume" /><p><b>GitHub, Agile, Jira</b></p></li>
-                    <li className={'resumeList'}><div className="blueDotResume" /><p><b>Microsoft office</b></p></li>
+                    <li className={'resumeList'}><div className="blueDotResume" /><p><b>Experience with Microsoft office</b></p></li>
+                    <li className={'resumeList'}><div className="blueDotResume" /><p><b>Experience with JIRA</b></p></li>
+                    <li className={'resumeList'}><div className="blueDotResume" /><p><b>Experience with Google Firebase</b></p></li>
+                    <li className={'resumeList'}><div className="blueDotResume" /><p><b>Proficient in understanding of code versioning tools (such as Git)</b></p></li>
                 </ul>
             </div>
             <h2 className={"resumeSubTitle"}>Languages</h2>

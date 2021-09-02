@@ -8,7 +8,7 @@
 
 .resumeBox { 
     width: 700px;
-    height: 310px;
+    min-height: 310px;
     background-color: white;
     box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
     -webkit-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
