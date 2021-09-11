@@ -1,0 +1,10 @@
+.asoMainPage { 
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    min-height: 200rem;
+    width: 100%;
+    max-width: 1400px;
+    background-color: white;
+    /* border: 1px solid red; */
+}

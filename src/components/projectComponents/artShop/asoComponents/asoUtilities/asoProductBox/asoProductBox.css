@@ -1,0 +1,24 @@
+.asoProductBox { 
+    margin: 0;
+    width: 220px;
+    height: 320px;
+    border: 1px solid #ccc;
+}
+.asoProductBox img { 
+    margin: 20px 5px 5px;
+}
+.asoProductBox h3 { 
+    text-align: left;
+    margin: 10px 15px 0;
+    line-height: 1.5rem;
+}
+.asoProductBox h6 { 
+    text-align: left;
+    margin: 0 15px 5px;
+    line-height: 1.5rem;
+}
+.asoProductBox p { 
+    text-align: left;
+    margin: 0 15px;
+    line-height: 1.5rem;
+}

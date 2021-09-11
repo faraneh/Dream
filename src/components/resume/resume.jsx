@@ -2,6 +2,9 @@ import React from 'react';
 import './resume.css';
 import Navbar from '../navbar/navbar';
 import MainPageFooter from '../mainPage/mainPageFooter/mainPageFooter';
+import Resume from '../../assets/PDF/FaraneJavadi-Resume-Sep21.pdf';
+
+
 
 const resume = () => {
 
@@ -17,7 +20,7 @@ const resume = () => {
         <div className="resume">
             <Navbar className={'mainPageNavbarStyle'} /> 
             <div className="resumeHeader"><div className="blueDot" style={{marginTop: 12}} /><h1>Resume</h1></div>
-            <div className="resumeNextLine"><h2 className={"resumeSubTitle"} style={{margin: 0}} >Experience</h2><button className={'btn1'} style={{width: 200, fontSize: "0.9rem", padding: 0}}>DOWNLOAD CV</button></div>
+            <div className="resumeNextLine"><h2 className={"resumeSubTitle"} style={{margin: 0}} >Experience</h2><a href={Resume} download><button className={'btn1'} style={{width: 200, fontSize: "0.9rem", padding: 0}}>DOWNLOAD CV</button></a></div>
             <div className="resumeBox experience">
                 <div className="experienceOne">
                     <h2>2019 - 2020</h2>
@@ -26,10 +29,10 @@ const resume = () => {
                 </div>
                 <div className="experienceTwo">
                     <ul>
-                        <li>I build website UI based on wireframes and mockups (or best practices, bestseller website templates), also in some projects I designed elements with Figma.</li>
+                        <li>I build website UI based on wireframes and mockups (or best practices, bestseller website templates), also in some projects I designed elements with Figma</li>
                         <li>Using HTML5, CSS, Javascript, jQuery, Bootstrap, Reactjs, Redux as main languages</li>
                         <li>I collaborate with product team members to implement new feature developments (Github based code communication)</li>
-                        <li>Used Agile every basis days</li>
+                        <li>Used Agile on daily basis</li>
                     </ul>
                 </div>
             </div>

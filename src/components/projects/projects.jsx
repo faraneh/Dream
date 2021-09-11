@@ -15,10 +15,10 @@ class Projects extends Component {
             //     componentName: "/todolist",
             // },
             // {
-            //     name: 'Resto',
+            //     name: 'Art Shop',
             //     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ut? Ipsum, architecto. Rem amet libero corrupti! Quia ipsum explicabo ipsam soluta, ullam unde voluptatibus placeat ratione. Itaque earum nostrum saepe!',
             //     imageURL: 'https://images.unsplash.com/photo-1508403233766-d611abbd37c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
-            //     componentName: '/projects/Resto',
+            //     componentName: '/art-shop',
             // },
             {
                 name: 'Travel blog',
@@ -38,6 +38,7 @@ class Projects extends Component {
                 {stateArray.map(project => 
                     <ProjectBox name={project.name} description={project.description} image={project.imageURL} pathName={project.componentName} key={project.name} />
                 )}
+                <p style={{fontSize: 20}}>New projects will be uploaded soon ;)</p>
             </div>
             <MainPageFooter style={{position: 'relative', height: '8rem'}} />
             </React.Fragment>

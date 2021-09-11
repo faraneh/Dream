@@ -1,0 +1,175 @@
+.asoFirstPageContent {
+    position: absolute; 
+    top: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    width: 90%;
+    max-width: 1400px;
+    min-height: 1500px;
+}
+.asoMainBanner { 
+    width: 95%;
+    height: 550px;
+    margin: 20px auto 0;
+    /* border: 1px solid red; */
+    /* overflow: hidden; */
+}
+.asoBannerImage{
+    position: fixed;
+    width: 95%;
+    height: 200px;
+    overflow: hidden;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.asoBannerDot { 
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    position: absolute; 
+    top: 300px;
+    left: 1150px;
+    cursor: pointer;
+    display: none;
+ }
+ .asoBannerProdectBox { 
+     width: 110px;
+     height: 150px;
+     background-color: white;
+     position: absolute;
+     top: 35px;
+     left: -35px;
+     border-radius: 5px;
+     opacity : 0;
+     box-sizing: border-box;
+ }
+ .asoFirstBannerImgOneOne { 
+    top: 69%;
+    left: 70%;
+    display: none;
+    background-color: white;
+ }
+ .asoFirstBannerImgOneTwo { 
+    top: 65%;
+    left: 40%;
+    background-color: white;
+    display: none;
+ }
+ .asoFirstBannerImgTwoOne {
+    top: 68%;
+    left: 60%;
+    background-color: white;
+ }
+ .asoFirstBannerImgTwoTwo {
+    top: 60%;
+    left: 30%;
+    background-color: white;
+ }
+ .asoFirstBannerImgThreeOne { 
+    top: 67%;
+    left: 30%;
+    background-color: white;
+ }
+ .asoFirstBannerImgThreeTwo { 
+    top: 68%;
+    left: 55%;
+    background-color: white;
+ }
+ .asoBannerProdectBox img { 
+     margin: 5px;
+     margin-bottom: 0;
+     width: 95px;
+     height: 95px;
+ }
+ .asoBannerProdectBox { 
+    margin-top: -5px;
+ }
+ .asoBannerDot:hover .asoBannerProdectBox { 
+     opacity: 0.9;
+ }
+
+ /* .asoFirstBannerImgTwoOne { 
+    top: 100px;
+    left: 550px;
+ } */
+
+ .asoBannerImage { 
+     width: 95%;
+ }
+ .asoSubBannerText { 
+     font-size: 2rem;
+     font-weight: 500;
+     margin: 70px 0;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     line-height: 3.1rem;
+ }
+ .asoSubBannerThreeBoxes { 
+     display: flex;
+     flex-flow: row;
+     justify-content: center;
+ }
+ .asoSubBannerBox { 
+     width: 410px;
+     height: 600px;
+     margin: 20px;
+     background-size: cover;
+     background-position: center;
+     justify-content: center;
+     background-blend-mode: darken;
+     cursor: pointer;
+ }
+ .asoSubBannerBox h2 { 
+    color: white;
+    margin: auto;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    margin-top:250px;
+    text-shadow: 5px 5px 15px black;
+ }
+ .asoSubBannerBox p {
+    color: white;
+    margin: auto;
+    font-size: 1rem;
+    text-decoration: underline;
+    text-shadow: 5px 5px 15px black;
+ }
+
+@media screen and (min-width: 650px) and (max-width:1400px) { 
+    .asoFirstPageContent {
+        top: 7rem;
+        width: 90%;
+        margin: auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .asoMainBanner { 
+        height: 400px;
+    }
+    .asoBannerImage { 
+        height: 400px;
+    }
+    .asoBannerDot { display: none;}
+ }
+
+
+@media screen and (min-width: 1400px) { 
+    .asoFirstPageContent {
+        top: 11rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .asoMainBanner { 
+        height: 600px;
+    }
+    .asoBannerImage { 
+        height: 600px;
+    }
+    .asoBannerDot { 
+        display: block;
+    }
+ }

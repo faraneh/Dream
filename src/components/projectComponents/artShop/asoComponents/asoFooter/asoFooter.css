@@ -1,0 +1,8 @@
+.asoFooter { 
+    position: absolute; 
+    margin: 0;
+    padding: 0;
+    height: 12rem;
+    width: 100%;
+    border: 1px solid red;
+}

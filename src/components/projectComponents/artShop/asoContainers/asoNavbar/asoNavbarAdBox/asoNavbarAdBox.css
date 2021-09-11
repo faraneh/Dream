@@ -1,0 +1,41 @@
+.asoNavbarAdBox { 
+    width: 200px;
+    height: 260px;
+    margin: 35px auto;
+    justify-content: space-evenly;
+}
+.asoAdImageBox { 
+    height: 230px;
+    width: 190px;
+    margin: auto;
+    margin-top: 5px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.asoAdBoxTitle { 
+    width: 190px;
+    text-align: left;
+    height: 30px;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.asoNavbarAdBox:hover .asoAdMore{
+    text-decoration: underline;
+}
+.asoAdMore { 
+    width: 200px;
+    list-style: none;
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-align: left;
+    display: flex;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.asoAdMore:hover { 
+    text-decoration: underline;
+}

@@ -1,0 +1,24 @@
+.ArtShop {
+    margin: 0;
+    padding: 0;
+    background-color:rgb(227, 213, 200);
+    padding-top: 100px;
+    box-sizing: border-box;
+    width: 100vw;
+    max-width: 100vw;
+}
+.projectBoxMargin { 
+    height: 98%;
+    width: 90%;
+    margin:  0 auto 100px;
+    border: 1px solid #ccc;
+    box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
+    -webkit-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
+    -moz-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
+    background-color: white;
+}
+.projectBoxTitle { 
+    margin-top: 150px;
+    margin-bottom: 40px;
+    width: 200px;
+}
