@@ -40,7 +40,7 @@ const mainPageBody = (props) => {
                             pathname: '/projects'
                         }} style={{textDecoration: 'none', color: 'inherit'}}>PROJECTS</Link></button>
                     </div>
-                    <p className={'mainBodyDesc'}>My name is Farane and I'm front end developer, I ususally work with react, and Im axperienced in HTML, CSS, JS, Reactjs and Redux. <br /> In each project I do seach for better ways to build minimal, simple, beautifull websites which helps my clients to reach whay they need, In my idea, small ideas can make big changes, if we know how to build them with creativity and passion :)</p>
+                    <p className={'mainBodyDesc'}>My name is Farane and I'm front end developer, I ususally work with react, and Im axperienced in HTML, CSS, JS, Reactjs and Redux. <br /> In each project I do seach for better ways to build minimal, simple, beautifull websites which helps my clients to reach they needs, In my idea, small details can make big changes, if we know how to make them with creativity and passion :)</p>
                 </div>
             </div>
         </div>

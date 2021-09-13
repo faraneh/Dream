@@ -22,7 +22,7 @@ class asoMainPage extends Component {
                 otherImages : ['https://www.ikea.com/ca/en/images/products/froeset-chair-red-stained-oak-veneer__0937801_pe793857_s5.jpg?f=xl','https://www.ikea.com/ca/en/images/products/froeset-chair-red-stained-oak-veneer__0832029_pe777563_s5.jpg?f=xl'],
                 desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae reprehenderit fugiat sed autem cum sequi aliquam perferendis, in reiciendis nobis?',
                 Qty : 10,
-                fullPrice : '665',
+                fullPrice : 675,
                 currentPrice : 660,
             },
             11102 : {
@@ -34,7 +34,7 @@ class asoMainPage extends Component {
                 otherImages : ['https://www.ikea.com/ca/en/images/products/froeset-chair-black-stained-oak-veneer__0937800_pe793855_s5.jpg?f=xl','https://www.ikea.com/ca/en/images/products/froeset-chair-black-stained-oak-veneer__0985892_pe816864_s5.jpg?f=xl'],
                 desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae reprehenderit fugiat sed autem cum sequi aliquam perferendis, in reiciendis nobis?',
                 Qty : 8,
-                fullPrice : '665',
+                fullPrice : 0,
                 currentPrice : 660,
             },
             11201 : {
@@ -46,7 +46,7 @@ class asoMainPage extends Component {
                 otherImages : ['https://www.ikea.com/ca/en/images/products/paerlband-tealight-holder__0985136_pe816515_s5.jpg?f=xl','https://www.ikea.com/ca/en/images/products/paerlband-tealight-holder__0610813_ph149204_s5.jpg?f=xl'],
                 desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae reprehenderit fugiat sed autem cum sequi aliquam perferendis, in reiciendis nobis?',
                 Qty : 8,
-                fullPrice : '665',
+                fullPrice : 685,
                 currentPrice : 660,
             },
             11301 : {
@@ -58,7 +58,7 @@ class asoMainPage extends Component {
                 otherImages : ['https://www.ikea.com/ca/en/images/products/roedarv-cushion-multicolor__0889174_pe597147_s5.jpg?f=xl','https://www.ikea.com/ca/en/images/products/roedarv-cushion-multicolor__0456293_pe604020_s5.jpg?f=xl'],
                 desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae reprehenderit fugiat sed autem cum sequi aliquam perferendis, in reiciendis nobis?',
                 Qty : 15,
-                fullPrice : '665',
+                fullPrice : 675,
                 currentPrice : 660,
             },
             11302 : {
@@ -70,7 +70,7 @@ class asoMainPage extends Component {
                 otherImages : ['https://www.ikea.com/ca/en/images/products/skogskorn-cushion-dark-gray-multicolor__0739373_pe741711_s5.jpg?f=xl','https://www.ikea.com/ca/en/images/products/skogskorn-cushion-dark-gray-multicolor__0712213_pe728662_s5.jpg?f=xl'],
                 desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae reprehenderit fugiat sed autem cum sequi aliquam perferendis, in reiciendis nobis?',
                 Qty : 8,
-                fullPrice : '665',
+                fullPrice : 0,
                 currentPrice : 660,
             },
         }

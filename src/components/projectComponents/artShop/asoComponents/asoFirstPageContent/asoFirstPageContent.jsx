@@ -91,22 +91,22 @@ const AsoFirstPageContent = (props) => {
                 <h2 className={"asoSubBannerText"}>Get inspired by shopping our carefully curated selection of beautiful and <br />intentionally designed pieces that hold their own over time.</h2>
             </div>
             <div className="asoSubBannerThreeBoxes">
-                <div className="asoSubBannerBox asoSubBannerBoxOne" style={{backgroundImage: 'URL("https://images.unsplash.com/photo-1618211535056-e678b388af32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3101&q=80")'}}>
+                <div className="asoSubBannerBox asoSubBannerBoxOne" style={{backgroundImage: 'URL("https://images.unsplash.com/photo-1618211535056-e678b388af32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80")'}}>
                     <h2>SS-21</h2>
                     <p>Shop All</p>
                 </div>
-                <div className="asoSubBannerBox asoSubBannerBoxTwo" style={{backgroundImage: 'URL("https://images.unsplash.com/photo-1513161455079-7dc1de15ef3e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3764&q=80")'}}>
+                <div className="asoSubBannerBox asoSubBannerBoxTwo" style={{backgroundImage: 'URL("https://images.unsplash.com/photo-1513161455079-7dc1de15ef3e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80")'}}>
                     <h2>FA-21</h2>
                     <p>Shop All</p>
                 </div>
-                <div className="asoSubBannerBox asoSubBannerBoxThree" style={{backgroundImage: 'URL("https://images.unsplash.com/photo-1615529182904-14819c35db37?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=4096&q=80")'}}>
+                <div className="asoSubBannerBox asoSubBannerBoxThree" style={{backgroundImage: 'URL("https://images.unsplash.com/photo-1615529182904-14819c35db37?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80")'}}>
                     <h2>SS-22</h2>
                     <p>Shop All</p>
                 </div>
             </div>
             {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
             <h2 className={"asoSubBannerText"} style={{margin:'80px 0px 50px 0px'}}>Brand New Selections</h2>
-            <AsoProductBox imageAdrs={asoProductSample.mainPic} productTitle={asoProductSample.ProductName} category={asoProductSample.category} price={asoProductSample.currentPrice} />
+            <AsoProductBox imageAdrs={asoProductSample.mainPic} productTitle={asoProductSample.ProductName} category={asoProductSample.category} price={asoProductSample.currentPrice} fullPrice={asoProductSample.fullPrice}/>
         </div>
      );
 }
