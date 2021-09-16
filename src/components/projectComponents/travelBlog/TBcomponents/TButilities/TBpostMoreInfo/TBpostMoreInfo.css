@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     width: 750px;
-    min-height: 1950px;
+    /* min-height: 1950px; */
     margin: 0;
     margin-right: 20px;
     border: 2px solid rgb(235, 235, 235);

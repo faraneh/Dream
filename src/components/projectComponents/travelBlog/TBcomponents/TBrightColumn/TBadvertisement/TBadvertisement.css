@@ -6,6 +6,7 @@
     box-shadow: rgba(104, 104, 104, 0.2) 0px 2px 8px 0px;
     padding-top: 5px;
     box-sizing: border-box;
+    background-color: #FCFCFC;
 }
 .TBadImage {
     width: 330px;
@@ -23,4 +24,23 @@
     color: white; 
     line-height: 320px;
     text-shadow: 1px 1px 20px black;
+}
+
+@media (max-width: 800px) { 
+    .TBadvertisement { 
+        width: 90%;
+        height: unset;
+        margin: auto;
+        padding:15px 5px;
+    }
+    .TBadImage { 
+        width: 90%;
+        padding-top: 90%;
+        height: 0;
+        margin: auto;
+    }
+    .TBadImage p {
+        line-height: 0;
+        display: none;
+    }
 }

@@ -4,6 +4,7 @@
     margin: 0 auto 20px 0;
     border: 2px solid rgb(235, 235, 235);
     box-shadow: rgba(104, 104, 104, 0.2) 0px 2px 8px 0px;
+    background-color: #FCFCFC;
 }
 .TBaboutMe img { 
     width: 170px;
@@ -33,4 +34,20 @@
     background-color: #628A76;
     color: #FCFCFC;
     transition: background-color 0.5s ease;
+}
+
+@media(max-width: 800px) {
+    .TBaboutMe { 
+        width : 90%;
+        margin: auto;
+        box-sizing: border-box;
+        padding-bottom: 40px;
+    }
+    .TBaboutMe p { 
+        width: 90%;
+    }
+    .TBaboutMeIcon { 
+        margin-top: 20px;
+        transform: scale(0.7);
+    }
 }

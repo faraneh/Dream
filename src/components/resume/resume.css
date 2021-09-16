@@ -4,23 +4,26 @@
     padding-top: 150px;
     padding-bottom: 0;
     background-color:rgb(227, 213, 200);
+    height:max-content;
+    width: 100vw;
+    position: absolute;
 }
 
 .resumeBox { 
-    width: 700px;
-    min-height: 310px;
+    min-height: 350px;
+    height: fit-content;
     background-color: white;
     box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
     -webkit-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
     -moz-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
     margin: 40px auto;
-    padding: 20px;
+    padding: 0 20px;
     box-sizing: border-box;
     text-align: left;
 }
 .resumeHeader { 
     /* border: 1px solid red; */
-    width: 130px;
+    width: 160px;
     height: 2rem;
     margin: 50px auto 100px;
     display: flex;
@@ -32,39 +35,46 @@
     margin-left: -5px;
     font-weight: 800;
     font-size: 2rem;
-    
 }
 .resumeSubTitle { 
-    text-align: left;
-    width: 700px;
+    text-align: center;
     margin: 80px auto 50px;
     font-weight: 800;
     font-size: 1.7rem;
     padding-left: 5px;
+    width: 80%;
 }
 .resumeNextLine { 
-    width: 700px;
+    width: 80%;
     margin: 0 auto;
-    height: 4rem;
+    height: 6rem;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: center;
 }
 .experience{
+    width: 80%;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
+    /* border:1px solid red; */
 }
 .experienceOne {
     /* border: 1px solid red; */
-    width: 40%;
+    width: 100%;
     padding: 30px 30px;
     box-sizing: border-box;
+    text-align: center;
+    /* border:1px solid red; */
 }
 .experienceOne h2 { 
     color: rgb(57, 110, 255);
     font-size: 1.4rem;
     font-weight: 900;
     margin-bottom: 0;
+    /* border:1px solid red; */
 }
 .experienceOne h3 { 
     font-size: 1.2rem;
@@ -74,13 +84,13 @@
 }
 .experienceTwo {
     /* border: 1px solid red; */
-    width: 60%;
-    padding: 40px 30px;
+    width: 100%;
+    padding: 40px 10px;
     line-height: 2rem;
     box-sizing: border-box;
 }
 .resumeFindMore { 
-    width: 700px;
+    width: 80%;
     margin: auto;
     font-size: 0.8rem;
     text-align: left;
@@ -107,4 +117,74 @@
     margin: 0;
     padding: 0;
     cursor: pointer;
+}
+
+@media (min-width: 710px) and (max-width: 1100px) { 
+    .resumeBox { 
+        max-width: 700px;
+        margin: 40px  auto;
+    }
+    .resumeNextLine {
+        width: 700px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .experience { 
+        flex-flow: row;
+    }
+    .resumeBox { 
+        width: 80%;
+        padding: 20px;
+    }
+    .resumeSubTitle { 
+        text-align: left;
+        width: 700px;
+    }
+    .experienceOne { 
+        width: 40%;
+        text-align: left;
+    }
+    .experienceTwo { 
+        width : 60%;
+        padding: 40px 30px;
+    }
+    .resumeFindMore{
+        width: 700px;
+    }
+}
+
+@media (min-width: 1100px) { 
+    .resumeBox { 
+        max-width: 700px;
+        margin: 40px  auto;
+    }
+    .resumeNextLine {
+        width: 700px;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .experience { 
+        flex-flow: row;
+    }
+    .resumeBox { 
+        width: 80%;
+        padding: 20px;
+    }
+    .resumeSubTitle { 
+        text-align: left;
+        width: 700px;
+    }
+    .experienceOne { 
+        width: 40%;
+        text-align: left;
+    }
+    .experienceTwo { 
+        width : 60%;
+        padding: 40px 30px;
+    }
+    .resumeFindMore{
+        width: 700px;
+    }
 }

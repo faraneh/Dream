@@ -2,22 +2,21 @@
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    min-height: 100vh;
-    max-height: 100vh;
+    min-height: 1700px;
     width: 100vw;
     overflow-x: scroll;
+    position: absolute;
 }
+
 .mainPageBodyBackground { 
     position: absolute;
     width: 100vw;
     overflow-X:scroll;
-    height: 100vh;
     text-align: center;
     margin: 0;
     padding: 0;
-    height: 100vh;
-    max-height: 100vh;
+    min-height: 1700px;
+    height: max-content;
     box-sizing: border-box;
 }
 .mainPageBodyCreamBoxLeft { 
@@ -25,27 +24,25 @@
     left: 0;
     top: 0;
     width: 40%;
-    height: 100vh;
+    height:1700px;
     background-color: rgb(227, 213, 200);
 }
 .mainPageCenterBox { 
-    width: 900px;
-    height: 600px;
+    width: 340px;
     margin: auto;
-    background-color: white;
-    display: flex;
-    flex-flow: row;
+    display: flex;  
+    flex-flow: column;
     box-sizing: border-box;
     position: absolute;
     z-index: 2;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 25%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 .mainPageCenterBoxLeft { 
     background-color: rgb(243, 233, 227);
-    width: 400px;
-    height: 100%;
+    width: 340px;
+    height: 600px;
     padding-top: 5px;
     box-sizing: border-box;
     box-shadow: -11px 9px 28px -1px rgba(105, 105, 105, 0.3);
@@ -53,11 +50,13 @@
     -moz-box-shadow: -11px 9px 28px -1px rgba(105, 105, 105, 0.3);
 }
 .mainPageCenterBoxRight {
-    width: 450px;
-    height: 100%;
+    width: 340px;
     text-align: left;
     padding: 20px;
     box-sizing: border-box;
+    background-color: rgba(243, 233, 227, 0.5);
+    margin-bottom: 200px;
+    height: 700px;
 }
 .mainPageCenterBoxRight h2{ 
     font-size: 5.5rem;
@@ -94,7 +93,7 @@
     transform: scale(1.1);
 }
 .btn2 { 
-    height: 30px;
+    height: 35px;
     width: 140px;
     margin: 5px 10px 40px;
     border-bottom-left-radius: 20px;
@@ -143,6 +142,10 @@
     font-size: 1.1rem;
     margin-bottom: 75px;
 }
+.mainPageButtons { 
+    display: flex;
+    flex-flow: row;
+}
 .mainPageLeftBoxBottom { 
     background-color:rgb(255, 251, 248);
     width: 100%;
@@ -152,7 +155,53 @@
     color:rgba(105, 105, 105, 0.3);
 }
 
+.mainPageFooter { 
+    bottom:0;
+    height: 8rem;
+    z-index: 1;
+}
+
+@media (min-width: 500px) and (max-width: 1100px) { 
+
+    .mainPage { 
+        height: 150vh;
+    }
+    .mainPageBodyBackground { 
+        min-height: 150vh;
+    }
+    .mainPageCenterBox { 
+        width : 80%;
+        margin: auto;
+        top: 15%;
+    }
+    .mainPageCenterBoxLeft { 
+        width: 100%;
+    }
+    .mainPageCenterBoxRight { 
+        width: 100%;
+        background-color: rgba(243, 233, 227, 0.5);
+        margin-bottom: 0;
+    }
+    .mainPageBodyCreamBoxLeft { 
+        height: 150vh;
+    }
+    .mainPageFooter { 
+        position:absolute;
+        display: block;
+        bottom:0;
+        height: 8rem;
+    }
+}
+
 @media (min-width: 1100px) { 
+    .mainPage { 
+        height: 100vh;
+        max-height: 100vh;
+        min-height: 100vh;
+    }
+    .mainPageBodyBackground { 
+        min-height: 100vh;
+    }
     .mainPageNavbarStyle { 
         position: fixed;
         top: 0;
@@ -165,6 +214,9 @@
         left: 0;
         z-index: 2;
     }
+    .mainPageBodyCreamBoxLeft { 
+        height: 100%;
+    }
     .mainPageCenterBox { 
         width: 900px;
         height: 600px;
@@ -173,5 +225,21 @@
         display: flex;
         flex-flow: row;
         box-sizing: border-box;
+        top: 20%;
+    }
+    .mainPageCenterBoxLeft { 
+        width: 450px;
+        height: 600px;
+    }
+    .mainPageCenterBoxRight { 
+        width: 500px;
+        margin-bottom: 0;
+        height: 600px;
+    }
+    .mainPageFooter { 
+        position: fixed;
+        bottom: 0;
+        height: 8rem;
     }
 }
+

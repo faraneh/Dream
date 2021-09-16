@@ -1,7 +1,7 @@
 .TBbannerBody{
     width: 100%;
     min-width: 1200px;
-    min-height: 110vh;
+    min-height: 110vh; 
     /* border: 1px solid blue; */
     background-image: linear-gradient(transparent 100%, #FCFCFC 0%), 
     linear-gradient(to bottom, transparent 0%, #FCFCFC 100%),URL('https://images.unsplash.com/photo-1550493462-d94f77de817e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8c3dpdHplcmxhbmR8ZW58MHwwfDB8d2hpdGV8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60');
@@ -73,4 +73,45 @@
     color: white;
     font-size: 1rem;
     font-weight: 600;
+}
+
+@media (max-width: 800px) { 
+    .TBbannerBody { 
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        min-height: unset;
+        height: 70vh;
+    }
+    .TBnav {
+        padding: 15px 0;
+        margin: 0;
+        max-width: 100%;
+    }
+    .TBnavLinks { 
+        display : none;
+    }
+    .TBlogo {
+        transform : scale(0.6);
+        margin: 0;
+    }
+    .TBlogo p {
+        margin: 0;
+    }
+    .TBmainBannerText { 
+        margin-top: 60px;
+        justify-content: center;
+    }
+    .TBmainBannerTextMain { 
+        font-size: 2rem;
+    }
+    .TBmainBannerTextDesc { 
+        font-size: 1.2rem;
+    }
+    .TBbannerButton { 
+        transform : scale(0.6);
+    }
+    .TBlogo :first-child { 
+        margin: 2px 10px 2px 0;
+    }
 }

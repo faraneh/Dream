@@ -47,3 +47,21 @@
     background-color: #628A76;
     color: #FCFCFC;
 }
+
+@media (max-width: 800px) { 
+    .TBLeftColumn { 
+        width: 100%;
+    }
+    .TBleftColumnPagination { 
+        width: 90%;
+        margin: auto;
+    }
+    .TBpaginationList { 
+        width: 100%;
+    }
+    .TBpaginationItem { 
+        font-size: 1rem;
+        margin: 0 2px;
+        width: 30px;
+    }
+}

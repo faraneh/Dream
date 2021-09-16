@@ -6,3 +6,9 @@
     padding: 0;
     background-color: #FCFCFC;
 }
+
+@media(max-width: 800px) {
+    .TBRightColumn { 
+        width : 100%;
+    }
+}

@@ -29,3 +29,24 @@
     text-align: left;
     margin-left: 10px;
 }
+
+@media(max-width: 800px) { 
+    .TBsidePost { 
+        width: 100%;
+        padding: 0;
+    }
+    .TBsideImage {
+        /* border: 1px solid blue; */
+        width: 100%;
+        margin: auto 5px;
+    }
+    .TBsideHeader { 
+        width: 90%;
+        margin: 10px 0;
+        /* border: 1px solid blue; */
+    }
+    .TBsideDate { 
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+}

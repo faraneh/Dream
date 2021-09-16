@@ -1,6 +1,5 @@
 .mainPageFooter {
     width: 100vw;
-
     text-align: center;
     display: flex;
     flex-flow: row;
@@ -11,7 +10,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     background-color: white;
-    z-index: 2;
+    height: 8rem;
     /* border: 1px solid red; */
 }
 .footerBox { 
@@ -55,8 +54,11 @@
 }
 
 
-@media (min-width: 1100px) { 
+@media (min-width: 1100px){ 
     .footerBox { 
         display: block;
+    }
+    .mainPageFooter {
+        z-index: 2;
     }
 }

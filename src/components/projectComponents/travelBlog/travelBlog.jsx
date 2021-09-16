@@ -20,7 +20,7 @@ class TravelBlog extends Component {
                 <div className="projectBoxMargin">
                     <TBmainPage />
                 </div>
-                <MainPageFooter style={{position: 'relative', height: '8rem'}} />
+                <MainPageFooter style={{height: '8rem'}} />
                 </div>
          );
     }

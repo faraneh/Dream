@@ -44,7 +44,7 @@ const resume = () => {
                 </div>
                 <div className="experienceTwo">
                     <ul>
-                        <li>developing website UI and functionalities with HTML5, CSS, Bootstrap and JS and jQuery</li>
+                        <li>Developing website UI and functionalities with HTML5, CSS, Bootstrap and JS and jQuery</li>
                         <li>Designed based on mockups</li>
                         <li>Also experienced using Wordpress services and templates</li>
                         <li>Communications with team made with Jira</li>

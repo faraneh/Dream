@@ -75,3 +75,34 @@
     border-radius: 3px;
     margin: 3px;
 }
+
+@media (max-width: 800px) { 
+    .TBfooter { 
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 50px;
+        margin-top: 300px;
+    }
+    .TBfooterText { 
+        width: 90%;
+        margin: auto;
+    }
+    .TBfooterSocialLinks {
+        margin: auto;
+    }
+    .TBfooterRecentNews { 
+        width: 90%;
+    }
+    .TBfooterFeed {
+        width: 90%;
+        /* border: 1px solid green; */
+    }
+    .TBinstagramFeed { 
+        width: 90%;
+        margin: auto;
+        height: fit-content;
+    }
+}

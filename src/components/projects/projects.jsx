@@ -31,17 +31,15 @@ class Projects extends Component {
     render() { 
         const stateArray =[...this.state.projectList]
         return ( 
-            <React.Fragment>
-            <Navbar className={'mainPageNavbarStyle'} />
             <div className={"projects"}>
+            <Navbar className={'mainPageNavbarStyle'} />
                 <div className="projectsHeader"><div className="blueDot" style={{marginTop: 12}} /><h1>Projects</h1></div>
                 {stateArray.map(project => 
                     <ProjectBox name={project.name} description={project.description} image={project.imageURL} pathName={project.componentName} key={project.name} />
                 )}
-                <p style={{fontSize: 20}}>New projects will be uploaded soon ;)</p>
+                <p style={{fontSize: 20, width: '100%', marginBottom: 250}}>New projects will be uploaded soon ;)</p>
+                <MainPageFooter style={{position: 'relative', height: '8rem', marginTop: 100}} />
             </div>
-            <MainPageFooter style={{position: 'relative', height: '8rem'}} />
-            </React.Fragment>
          );
     }
 }

@@ -52,3 +52,33 @@
     cursor: pointer;
     font-weight: 700;
 }
+
+@media(max-width: 800px) { 
+    .TBmainPost { 
+        width: unset;
+        max-width: 90%;
+        height: auto;
+        padding: 0 auto;
+        margin: 0 auto 10px;
+    }
+    .TBmainPost h3 { 
+        font-size: 1rem;
+    }
+    .TBmainPost p {
+        font-size: 0.8rem;
+    }
+    .TBpostImage {
+        width: 100%;
+        height:unset;
+        padding-top: 100%;
+        margin: 15px auto;
+    }
+    .TBwhiteBottom {
+        width: 120%;
+        max-width: 120%;
+        height: 100px;
+    }
+    .TBreadMoreButton { 
+        transform: scale(0.7);
+    }
+}

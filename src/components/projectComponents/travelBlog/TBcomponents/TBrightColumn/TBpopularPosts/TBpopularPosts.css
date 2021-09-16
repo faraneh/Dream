@@ -4,6 +4,7 @@
     margin: 10px auto 20px 0;
     border: 2px solid rgb(235, 235, 235);
     box-shadow: rgba(104, 104, 104, 0.2) 0px 2px 8px 0px;
+    background-color: #FCFCFC;
 }
 .TBpopularHeader { 
     text-align: left;
@@ -19,4 +20,22 @@
 .TBpopularList li {
     list-style: none;
     margin: 0;
+}
+
+@media(max-width: 800px) { 
+    .TBpopularPosts { 
+        width: 90%;
+        margin: 10px auto;
+    }
+    .TBpopularHeader { 
+        width: 90%;
+    }
+    .TBpopularList { 
+        width: 100%;
+    }
+    .TBpopularList li { 
+        width: 90%;
+        max-width: 90%;
+        /* border: 1px solid red; */
+    }
 }
