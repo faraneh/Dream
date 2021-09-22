@@ -127,6 +127,13 @@ class ContactMe extends Component {
                 subject : this.state.contactMe.subject.value,
                 message : this.state.contactMe.message.value,
              }
+
+             emailjs.sendForm('service_6tf9us4', 'template_xw5g8ld', message , 'user_KMoTiil2oiOhxeTrud4K9')
+             .then((result) => {
+                 console.log(result.text);
+             }, (error) => {
+                 console.log(error.text);
+             });
     
              axios.post('/messages.json', message)
                 .then (response => {
@@ -136,13 +143,6 @@ class ContactMe extends Component {
                 .catch (error => {
                     this.setState({eraseValues : false});
                     console.log(error, message);
-                })
-
-                emailjs.sendForm('service_6tf9us4', 'template_xw5g8ld', event.target , 'user_KMoTiil2oiOhxeTrud4K9')
-                .then((result) => {
-                    console.log(result.text);
-                }, (error) => {
-                    console.log(error.text);
                 });
 
                 const contactMeState = {...this.state.contactMe};
