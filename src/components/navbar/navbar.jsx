@@ -20,7 +20,7 @@ const navbar = (props) => {
                     <li><NavLink to= "/contact-me" exact activeStyle={{ fontWeight: 600, color: 'rgb(57, 110, 255)' }} style={{ textDecoration: 'none', color : 'black' }} >CONTACT ME</NavLink></li>
                 </ul>
             </div>
-            <nav className={'nav'} role='navigation'>
+            <nav className={'nav'}>
             <div id="menuToggle">
                 <input type="checkbox" />
                 <span></span>

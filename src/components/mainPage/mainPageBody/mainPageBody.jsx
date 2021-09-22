@@ -23,9 +23,9 @@ const mainPageBody = (props) => {
                         <hr className="blueLine" />
                         <h2>FRONT END DEVELOPER</h2>
                         <div className="mainPageLeftBoxBottom">
-                            <a href="https://github.com/faraneh" rel = "noreferrer" target="_blank" ><FontAwesomeIcon icon={faGithubSquare} size="2x" style={{margin: '-10px 10 0 0', color: 'rgb(59, 59, 59)'}} /></a>
-                            <a href="https://www.linkedin.com/in/faraneh-javadinejad" rel = "noreferrer" target="_blank" ><FontAwesomeIcon icon={faLinkedin} size="2x" style={{margin: '-10px 10 0 0', color: 'rgb(59, 59, 59)'}} /></a>
-                            <a href="https://twitter.com/faranehjn" rel = "noreferrer" target="_blank" ><FontAwesomeIcon icon={faTwitterSquare} size="2x" style={{margin: '-10px 10 0 0', color: 'rgb(59, 59, 59)'}} /></a>
+                            <a href="https://github.com/faraneh" rel = "noopener noreferrer" target="_blank" ><FontAwesomeIcon icon={faGithubSquare} size="2x" style={{margin: '-10px 10 0 0', color: 'rgb(59, 59, 59)'}} /></a>
+                            <a href="https://www.linkedin.com/in/faraneh-javadinejad" rel = "noopener noreferrer" target="_blank" ><FontAwesomeIcon icon={faLinkedin} size="2x" style={{margin: '-10px 10 0 0', color: 'rgb(59, 59, 59)'}} /></a>
+                            <a href="https://twitter.com/faranehjn" rel = "noopener noreferrer" target="_blank" ><FontAwesomeIcon icon={faTwitterSquare} size="2x" style={{margin: '-10px 10 0 0', color: 'rgb(59, 59, 59)'}} /></a>
                             <a className={'emailLink'} href={"mailto:faraneh.javadinejad@gmail.com"}><FontAwesomeIcon icon={faEnvelopeSquare} size="2x" style={{margin: '-10px 10 0 0', color: 'rgb(59, 59, 59)', fontSize: '2.03rem'}} /></a>
                         </div>
                     </div>

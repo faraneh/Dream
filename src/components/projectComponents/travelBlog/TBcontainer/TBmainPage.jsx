@@ -307,7 +307,7 @@ class TBMainPage extends Component {
     }
 
     TBpostClickedd = (index) => {
-      const TBindexSelected = parseInt(index);
+      const TBindexSelected = parseInt(index, 10);
       window.scrollTo({
         top: 1100, 
         behavior: 'smooth'

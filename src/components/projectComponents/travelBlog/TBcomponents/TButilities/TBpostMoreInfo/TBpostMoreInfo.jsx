@@ -4,7 +4,7 @@ import './TBpostMoreInfo.css';
 const TBpostMoreInfo = (props) => {
 
     const TBposts = [...props.posts];
-    const TBpost = TBposts[parseInt(props.index)];
+    const TBpost = TBposts[parseInt(props.index, 10)];
     const TBcommentList = TBpost.comments;
     const TBimages = [...props.posts[props.index].imageList];
 

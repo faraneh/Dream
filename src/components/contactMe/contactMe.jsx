@@ -3,6 +3,7 @@ import './contactMe.css';
 import ContactMeInput from './contactMeInput/contactMeInput';
 import axios from '../../axios-orders';
 import emailjs from 'emailjs-com';
+// import { sendForm } from 'emailjs-com';
 import MainPageFooter from '../mainPage/mainPageFooter/mainPageFooter';
 import Navbar from '../navbar/navbar';
 
@@ -120,21 +121,12 @@ class ContactMe extends Component {
 
         
         if(this.state.formIsValid && contactMemailValidationFinal) { 
-            
-
              const message = {
                 name : this.state.contactMe.name.value,
                 email : this.state.contactMe.email.value,
                 subject : this.state.contactMe.subject.value,
                 message : this.state.contactMe.message.value,
              }
-
-             emailjs.sendForm('service_6tf9us4', 'template_xw5g8ld', event.target , 'user_KMoTiil2oiOhxeTrud4K9')
-             .then((result) => {
-                 console.log(result.text);
-             }, (error) => {
-                 console.log(error.text);
-             });
     
              axios.post('/messages.json', message)
                 .then (response => {
@@ -145,6 +137,13 @@ class ContactMe extends Component {
                     this.setState({eraseValues : false});
                     console.log(error, message);
                 })
+
+                emailjs.sendForm('service_6tf9us4', 'template_xw5g8ld', event.target , 'user_KMoTiil2oiOhxeTrud4K9')
+                .then((result) => {
+                    console.log(result.text);
+                }, (error) => {
+                    console.log(error.text);
+                });
 
                 const contactMeState = {...this.state.contactMe};
                 contactMeState.name.value = '';
