@@ -1,8 +1,141 @@
 .asoFooter { 
     position: absolute; 
-    margin: 0;
+    bottom: 0;
+    margin: 50px 0 10px;
     padding: 0;
-    height: 12rem;
+    /* height: 40rem; */
     width: 100%;
-    border: 1px solid red;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid red; */
+    background-color: white;
+    margin-bottom: 50px;
+}
+.asoFooterCols { 
+    width: 90%;
+    max-width: 100%;
+    /* border: 1px solid red; */
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.asoFooterFirst { 
+    width: 25%;
+    min-width: 130px;
+}
+.asoFooterSecond { 
+    width: 25%;
+    min-width: 150px;
+}
+.asoFooterThird { 
+    width: 25%;
+    min-width: 130px;
+}
+.asoFooterForth { 
+    width: 25%;
+    min-width: 130px;
+}
+.asoFooterCols div ul li { 
+    list-style: none;
+    line-height: 2.7rem;
+    text-align: left;
+    cursor: pointer;
+}
+.asoFooterForth p {
+    line-height: 2.7rem;
+}
+
+.asoSM { 
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    min-width: 40px;
+    width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    height: 40px;
+    max-height: 40px;
+    margin: 2px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+.asoSMBox { 
+    /* display: flex;
+    flex-flow: row; */
+    min-width: 85%;
+    /* border: 1px solid red; */
+}
+.asoFooterForth { 
+    padding-left: 10px;
+}
+.asoFooterThird { 
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+@media (min-width: 710px) and (max-width: 1100px) { 
+    .asoFooterCols {
+        width: 80%;
+        /* border: 1px solid red; */
+    }
+    .asoSMBox { 
+        min-width: 100%;
+    }
+    .asoSM { 
+        display: inline-block;
+        min-width: 40px;
+        width: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        height: 40px;
+        max-height: 40px;
+        margin: 2px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+    .asoFooterForth { 
+        padding-left: 10px;
+    }
+    .asoFooterThird { 
+        text-align: left;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .asoFooterForth { 
+        width: 25%;
+        min-width: 200px;
+    }
+}
+
+
+@media (min-width: 1100px){
+    .asoFooterCols {
+        width: 80%;
+        /* border: 1px solid red; */
+        padding-left: 10px;
+    }
+    .asoSMBox { 
+        min-width: 100%;
+        text-align: left;
+    }
+    .asoSM { 
+        display: inline-block;
+        min-width: 40px;
+        width: 40px;
+        max-width: 40px;
+        min-height: 40px;
+        height: 40px;
+        max-height: 40px;
+        margin: 2px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+    .asoFooterForth { 
+        width: 25%;
+        min-width: 200px;
+    }
 }

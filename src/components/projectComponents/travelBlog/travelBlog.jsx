@@ -14,10 +14,10 @@ class TravelBlog extends Component {
     
     render() { 
         return ( 
-            <div className="TravelBlog">
+            <div className="TBTravelBlog">
                 <Navbar className={'mainPageNavbarStyle'} /> 
                 <div className="resumeHeader projectBoxTitle"><div className="blueDot" style={{marginTop: 12}} /><h1>Travel Blog</h1></div>
-                <div className="projectBoxMargin">
+                <div className="TBprojectBoxMargin">
                     <TBmainPage />
                 </div>
                 <MainPageFooter style={{height: '8rem'}} />

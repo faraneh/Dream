@@ -2,9 +2,14 @@
     position: relative;
     margin: 0 auto;
     padding: 0;
-    min-height: 200rem;
+    min-height: 6500px;
     width: 100%;
     max-width: 1400px;
     background-color: white;
     /* border: 1px solid red; */
+}
+@media (max-width: 650px) { 
+    .asoMainPage { 
+        min-height: 7700px;
+    }
 }

@@ -16,7 +16,7 @@ class Projects extends Component {
             // },
             {
                 name: 'Art Shop',
-                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, ut? Ipsum, architecto. Rem amet libero corrupti! Quia ipsum explicabo ipsam soluta, ullam unde voluptatibus placeat ratione. Itaque earum nostrum saepe!',
+                description: 'This project is only first page of an e-commerce, made by react. as it has sample products its kept in local state, but in short future the complete project will be uploaded here with dynamic product input and multi pages.',
                 imageURL: 'https://images.unsplash.com/photo-1508403233766-d611abbd37c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
                 componentName: '/art-shop',
             },

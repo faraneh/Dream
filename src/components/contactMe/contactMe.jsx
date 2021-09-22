@@ -118,18 +118,23 @@ class ContactMe extends Component {
         await this.setState({ emailIsNotValid : emailConflict });
         let contactMemailValidationFinal = !this.state.emailIsNotValid;
 
-        // console.log('emailValidation : ' + emailValidation);
-        // console.log('emailIsNotValid : ' + this.state.emailIsNotValid);
-        // console.log('if : ' + this.state.formIsValid && !this.state.emailIsNotValid);
-
         
         if(this.state.formIsValid && contactMemailValidationFinal) { 
-            const message = {
+            
+
+             const message = {
                 name : this.state.contactMe.name.value,
                 email : this.state.contactMe.email.value,
                 subject : this.state.contactMe.subject.value,
                 message : this.state.contactMe.message.value,
-            }
+             }
+
+             emailjs.sendForm('service_6tf9us4', 'template_xw5g8ld', event.target , 'user_KMoTiil2oiOhxeTrud4K9')
+             .then((result) => {
+                 console.log(result.text);
+             }, (error) => {
+                 console.log(error.text);
+             });
     
              axios.post('/messages.json', message)
                 .then (response => {
@@ -141,29 +146,20 @@ class ContactMe extends Component {
                     console.log(error, message);
                 })
 
-    
                 const contactMeState = {...this.state.contactMe};
                 contactMeState.name.value = '';
                 contactMeState.email.value = '';
                 contactMeState.subject.value = '';
                 contactMeState.message.value = '';
                 this.setState({contactMe : contactMeState, formIsValid : false, emailIsNotValid : false, formDisplay : 'none', messageDisplay : 'block'});
-    
-                
-                emailjs.sendForm('service_u3f4n8v', 'template_62bzl5w', event.target, 'user_KMoTiil2oiOhxeTrud4K9')
-                .then((result) => {
-                    console.log(result.text);
-                }, (error) => {
-                    console.log(error.text);
-                });
-
-        } else {
-            let contactMeCopy = this.state.contactMe;
-            contactMeCopy.email.valid = false;
-            contactMeCopy.email.touched = true;
-            this.setState({contactMe : contactMeCopy})
-            return;
-        }
+  
+            } else {
+                let contactMeCopy = this.state.contactMe;
+                contactMeCopy.email.valid = false;
+                contactMeCopy.email.touched = true;
+                this.setState({contactMe : contactMeCopy})
+                return;
+            }
      }
      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -201,7 +197,7 @@ class ContactMe extends Component {
             <Navbar className={'mainPageNavbarStyle'} /> 
             <div className="contactMeHeader"><div className="blueDot" style={{marginTop: 12}} /><h1>Let's talk</h1></div>
                 <div className="contactMeForm"  style={{display : display1}}>
-                    <form style={{width: '100%'}} onSubmit={this.contactMeHandler} onReset={this.contactMeResetHandler} >
+                    <form style={{width: '100%'}} onSubmit={() => this.contactMeHandler()} onReset={this.contactMeResetHandler} >
                         {formElementsArray.map(formElement => (
                             <ContactMeInput 
                                 key={formElement.id}

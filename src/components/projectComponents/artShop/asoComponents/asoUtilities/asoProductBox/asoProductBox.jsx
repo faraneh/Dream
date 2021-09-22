@@ -12,10 +12,16 @@ const asoProductBox = (props) => {
 
     return ( 
         <div className="asoProductBox">
+            <div className="asoProductTop">
             <img src={props.imageAdrs} style={{width: 150, height: 150}} alt="product" />
             <h3>{props.productTitle}</h3>
             <h6>{props.category}</h6>
             {asoProductPrice}
+            </div>
+            <div className="asoProductHoverButtons">
+                <button className="asoProductBtn1 asoProductInfo">Quick Shop</button>
+                <button className="asoProductBtn2 asoQuickAddToCard">Details</button>
+            </div>
         </div>
      );
 }

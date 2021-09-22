@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './asoMainPage.css';
 import AsoNavbar from '../asoNavbar/asoNavbar';
 import AsoFirstPageContent from '../../asoComponents/asoFirstPageContent/asoFirstPageContent';
+import AsoFooter from '../../asoComponents/asoFooter/asoFooter';
 
 class asoMainPage extends Component {
     state = { 
@@ -73,6 +74,19 @@ class asoMainPage extends Component {
                 fullPrice : 0,
                 currentPrice : 660,
             },
+            11401 : {
+                category: 'Armchairs',
+                ProductName : 'Banana Yellow Armchair',
+                SKU : '114',
+                colorCode : '01',
+                mainPic : 'https://www.ikea.com/ca/en/images/products/strandmon-armchair-skiftebo-yellow__0325450_pe517970_s5.jpg?f=xl',
+                otherImages : ['https://www.ikea.com/ca/en/images/products/strandmon-armchair-skiftebo-yellow__0837286_pe596513_s5.jpg?f=xl','https://www.ikea.com/ca/en/images/products/strandmon-armchair-skiftebo-yellow__0837297_pe601176_s5.jpg?f=xl'],
+                desc : 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae reprehenderit fugiat sed autem cum sequi aliquam perferendis, in reiciendis nobis?',
+                Qty : 8,
+                fullPrice : 1200,
+                currentPrice : 960,
+            },
+
         }
      }
     render() { 
@@ -83,6 +97,7 @@ class asoMainPage extends Component {
                     brands={this.state.asoBrands} 
                     rooms={this.state.asoRooms} 
                     defaultAd={this.state.asoDefaultSubMenuAd} />
+                <AsoFooter />
             </div>
          );
     }

@@ -123,7 +123,7 @@ class asoNavbar extends Component {
                     </div>
                     <div className="asoLogo">Art Shop</div>
                     <div className="asoSearchBar">
-                        <form>
+                        <form style={{width: '100%'}}>
                             <input className={"asoNavbarFormInput"} placeholder="What are you looking for ?"></input>
                             <button className={"asoBtn1"}><FontAwesomeIcon icon={faSearch} size="2x" style={{color: 'white', cursor: 'pointer', fontSize: 20}} /></button>
                         </form>

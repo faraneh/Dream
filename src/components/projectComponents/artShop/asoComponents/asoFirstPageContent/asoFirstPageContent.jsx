@@ -2,6 +2,9 @@
 import * as React from 'react';
 import './asoFirstPageContent.css';
 import AsoProductBox from '../asoUtilities/asoProductBox/asoProductBox';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight, faHammer, faMobile, faTags, faTruck } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const AsoFirstPageContent = (props) => {
@@ -34,7 +37,28 @@ const AsoFirstPageContent = (props) => {
             }
         },[asoCurrentBanner])
 
-        const asoProductSample = props.products[11101];
+        const asoProductSample = Object.values(props.products);
+
+        const asoFirstRef =  React.createRef();
+        const handleScroll = (direction) => { 
+            if (direction === 'left') {
+                return asoFirstRef ? (asoFirstRef.current.scrollLeft -=400) : null;
+            } else {
+                return asoFirstRef ? (asoFirstRef.current.scrollLeft +=400) : null;
+            }
+        }
+
+        const asoFirstRefTwo =  React.createRef();
+        const handleScrollTwo = (direction) => { 
+            if (direction === 'left') {
+                return asoFirstRefTwo ? (asoFirstRefTwo.current.scrollLeft -=400) : null;
+            } else {
+                return asoFirstRefTwo ? (asoFirstRefTwo.current.scrollLeft +=400) : null;
+            }
+        }
+
+
+        // console.log(asoProductSample);
 
     return ( 
         <div className="asoFirstPageContent">
@@ -106,7 +130,139 @@ const AsoFirstPageContent = (props) => {
             </div>
             {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
             <h2 className={"asoSubBannerText"} style={{margin:'80px 0px 50px 0px'}}>Brand New Selections</h2>
-            <AsoProductBox imageAdrs={asoProductSample.mainPic} productTitle={asoProductSample.ProductName} category={asoProductSample.category} price={asoProductSample.currentPrice} fullPrice={asoProductSample.fullPrice}/>
+            <div className="asoMainPageBrandNewSelections">
+                <button className="asoMainPageArrow" onClick={() => handleScroll('left')} ><FontAwesomeIcon icon={faChevronLeft} size="2x" style={{color: 'white', cursor: 'pointer'}} /></button>
+                <div className="asoMainPageBrandNewSelectionsCenter" ref={asoFirstRef}>
+                    {asoProductSample.map((el, index) => <AsoProductBox key={index} imageAdrs={el.mainPic} productTitle={el.ProductName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice}/> )}
+                </div>
+                <button className="asoMainPageArrow" onClick={() => handleScroll('right')} ><FontAwesomeIcon icon={faChevronRight} size="2x" style={{color: 'white', cursor: 'pointer'}} /></button>
+            </div>
+            {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
+            <div className="asoFifthBanner" style={{backgroundImage: 'URL("https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80")'}}>
+                <h2 className="asoFifthBannerTitle">New Collection, All <span style={{color: 'orange', textShadow:'2px 2px 5px grey'}}>Lights</span></h2>
+            </div>
+            {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
+            <h2 className={"asoSubBannerText"} style={{margin:'80px 0px 50px 0px'}}>Top Collections</h2>
+            <div className="asoMainPageBrandNewSelections">
+                <button className="asoMainPageArrow" onClick={() => handleScrollTwo('left')} ><FontAwesomeIcon icon={faChevronLeft} size="2x" style={{color: 'white', cursor: 'pointer'}} /></button>
+                <div className="asoMainPageBrandNewSelectionsCenter" ref={asoFirstRefTwo}>
+                    {asoProductSample.map((el, index) => <AsoProductBox key={index} imageAdrs={el.mainPic} productTitle={el.ProductName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice}/> )}
+                </div>
+                <button className="asoMainPageArrow" onClick={() => handleScrollTwo('right')} ><FontAwesomeIcon icon={faChevronRight} size="2x" style={{color: 'white', cursor: 'pointer'}} /></button>
+            </div>
+            {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
+            <h2 className={"asoSubBannerText"} style={{margin:'80px 0px 50px 0px'}}>Our Recognized Designers</h2>
+            <div className="asoRecognizedDesigners">
+                <div className="asoRecognizedDesignersLeft" style={{textAlign: 'left', backgroundImage: "URL('https://images.unsplash.com/photo-1618220179428-22790b461013?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=882&q=80')"}}>
+                    <div className="asoRecognizedDesignersLeftText">
+                        <p>Explore the Brand</p>
+                        <h3>Ferm Living</h3>
+                        <p><u>Shop More</u><FontAwesomeIcon icon={faChevronRight} style={{marginLeft: 5, padding: 3,color: 'white', cursor: 'pointer', transform: 'translateY(3px'}} /></p>
+                    </div>
+                </div>
+                <div className="asoRecognizedDesignersRight">
+                <div className="asoMainPageBrandNewSelectionsCenterZ">
+                    {asoProductSample.slice(0,9).map((el, index) => <AsoProductBox key={index} imageAdrs={el.mainPic} productTitle={el.ProductName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice}/> )}
+                </div>
+                </div>
+            </div>
+            {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
+            <div className="asoMainPageBrands" >
+                <h5>Drivemo</h5>
+                <h5>Kimini</h5>
+                <h5>Ravada</h5>
+                <h5>Zipp</h5>
+                <h5>Notrichi</h5>
+            </div>
+            {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
+            <div className="asoSixthBanners">
+                <div className="asoSixthBannersLeft" style={{backgroundImage: "URL('https://images.unsplash.com/photo-1595514535711-c31bb982d8b3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80')"}}>
+                    <p style={{fontSize: '2rem', fontWeight: '600', margin: 0}}>RHORNA from Drivemo</p>
+                    {/* <p><u>Shop More</u><FontAwesomeIcon icon={faChevronRight} style={{color: 'white', cursor: 'pointer', transform: 'translateY(3px'}} /></p> */}
+                    <button className="asoSixthBannersLeftBtn">Shop More</button>
+                </div>
+                <div className="asoasoSixthBannersRight">
+                    <div className="asoasoSixthBannersRightOne" style={{backgroundImage: "URL('https://images.unsplash.com/photo-1595514535431-1243b02c3b70?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80')"}} />
+                    <div className="asoasoSixthBannersRightTwo" style={{backgroundImage: "URL('https://images.unsplash.com/photo-1595514535215-8a093483610a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2600&q=80')"}} />
+                </div>
+            </div>
+            {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
+            <div className="asoShopBy">
+                <div className="asoShopByCategory">
+                    <div className="asoShopByCategoryOne" style={{backgroundImage: 'URL("https://www.ikea.com/ca/en/images/products/koarp-armchair-gunnared-beige-black__0522280_pe643185_s5.jpg?f=xl")'}} />
+                    <div className="asoShopByCategoryTwo">
+                        <ul>
+                            <li>Chairs</li>
+                            <li>Tables</li>
+                            <li>Sofas</li>
+                            <li>Desks</li>
+                            <li>Shelvings</li>
+                            <p><u>See More</u><FontAwesomeIcon icon={faChevronRight} style={{marginLeft: 5, padding: 3,color: '#ccc', cursor: 'pointer', transform: 'translateY(3px'}} /></p>
+                        </ul>
+                    </div>
+                </div>
+                <div className="asoShopByBrand">
+                    <div className="asoShopByBrandOne" style={{backgroundImage: 'URL("https://www.ikea.com/ca/en/images/products/lommarp-cabinet-dark-blue-green__0739327_pe741692_s5.jpg?f=xl")'}} />
+                    <div className="asoShopByBrandTwo">
+                        <ul>
+                            <li>Menu</li>
+                            <li>Muuto</li>
+                            <li>Ferm Living</li>
+                            <li>By Lessen</li>
+                            <li>AMP</li>
+                            <p><u>See More</u><FontAwesomeIcon icon={faChevronRight} style={{marginLeft: 5, padding: 3,color: '#ccc', cursor: 'pointer', transform: 'translateY(3px'}} /></p>
+                        </ul>
+                    </div>
+                </div>
+                <div className="asoShopByCollection">
+                    <div className="asoShopByCollectionOne" style={{backgroundImage: 'URL("https://www.ikea.com/ca/en/images/products/invaendig-artificial-terrarium-dome__0817882_pe774208_s5.jpg?f=xl")'}} />
+                    <div className="asoShopByCollectionTwo">
+                        <ul>
+                            <li>Bedroom</li>
+                            <li>Living Room</li>
+                            <li>Dining Room</li>
+                            <li>Office</li>
+                            <li>Lighting</li>
+                            <p><u>See More</u><FontAwesomeIcon icon={faChevronRight} style={{marginLeft: 5, padding: 3,color: '#ccc', cursor: 'pointer', transform: 'translateY(3px'}} /></p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
+            <div className="asoMainPageSubscribe">
+                <h4>Give 20%, Get $20!</h4>
+                <p>Join our newsletter today and receive 20% off for a friend and $20 for yourself!</p>
+                <input type="text" placeholder="Email address" /> <button className="asoSubsBtn">Sign up</button>
+            </div>
+            {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
+            <div className="asoMainPageColoredBtm">
+                <ul>
+                    <li style={{listStyle: 'none'}}>
+                        <FontAwesomeIcon icon={faHammer} size="3x" />
+                        <p style={{fontSize: '1.2rem'}}>Made to Order</p>
+                        <p style={{fontWeight: 300}}>Learn more about custom orders.</p>
+                        <p style={{fontWeight: 500}}><u>Learn More</u></p>
+                    </li>
+                    <li style={{listStyle: 'none'}}>
+                        <FontAwesomeIcon icon={faMobile} size="3x" />
+                        <p style={{fontSize: '1.2rem'}}>Return Policy</p>
+                        <p style={{fontWeight: 300}}>You have 30 days for returns.</p>
+                        <p style={{fontWeight: 500}}><u>Learn More</u></p>
+                    </li>
+                    <li style={{listStyle: 'none'}}>
+                        <FontAwesomeIcon icon={faTruck} size="3x" />
+                        <p style={{fontSize: '1.2rem'}}>Contactless Delivery</p>
+                        <p style={{fontWeight: 300}}>Now offering a safer way to shop.</p>
+                        <p style={{fontWeight: 500}}><u>Learn More</u></p>
+                    </li>
+                    <li style={{listStyle: 'none'}}>
+                        <FontAwesomeIcon icon={faTags} size="3x" />
+                        <p style={{fontSize: '1.2rem'}}>NEW: Price Matching</p>
+                        <p style={{fontWeight: 300}}>See something you like eslewhere?</p>
+                        <p style={{fontWeight: 500}}><u>Learn More</u></p>
+                    </li>
+                </ul>
+            </div>
         </div>
      );
 }

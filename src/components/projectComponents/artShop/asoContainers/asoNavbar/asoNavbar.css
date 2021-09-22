@@ -390,6 +390,7 @@
         padding-left: 30px;
         display: flex;
         margin: auto;
+        width: 90%;
     }
     .asoNavbarProfile { 
         padding-left: 0;
@@ -417,6 +418,12 @@
         flex-flow: row;
         justify-content: space-between;
         margin-top: 0;
+    }
+    .asoNavbarFormInput { 
+        width: 80%;
+    }
+    .asoLogo { 
+        min-width: 200px;
     }
 }
 
