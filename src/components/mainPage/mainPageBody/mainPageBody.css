@@ -243,3 +243,34 @@
     }
 }
 
+@media (min-width: 1250px) and (max-height: 830px) { 
+    .mainPageCenterBox {
+        height: 500px;
+    }
+    .mainPageCenterBoxLeft { 
+        height: 500px;
+    }
+    .mainPageCenterBoxRight { 
+        height: 500px;
+    }
+    .personalImage { 
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        margin: 40px auto 20px;
+    }
+    .mainPageCenterBoxLeft h2 { 
+        margin-bottom: 35px;
+    }
+    .mainPageCenterBoxRight h4 { 
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin: 10px 0 30px;
+    }
+    .mainBodyDesc { 
+        line-height: 1.5rem;
+        color: rgb(59, 59, 59);
+        font-size: 0.9rem;
+    }
+}
+

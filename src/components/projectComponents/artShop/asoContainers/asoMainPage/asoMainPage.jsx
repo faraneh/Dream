@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './asoMainPage.css';
-import AsoNavbar from '../asoNavbar/asoNavbar';
+// import { Route, Switch } from 'react-router-dom';
+import AsoProductAdd from '../../asoComponents/asoProductAdd/asoProductAdd';
 import AsoFirstPageContent from '../../asoComponents/asoFirstPageContent/asoFirstPageContent';
-import AsoFooter from '../../asoComponents/asoFooter/asoFooter';
+
 
 class asoMainPage extends Component {
     state = { 
@@ -87,20 +88,51 @@ class asoMainPage extends Component {
                 currentPrice : 960,
             },
 
-        }
+        },
+        asoFirstPage : true,
+        asoProductsAddPage : false,
      }
+
+     asoPageChangeHandler = () => { 
+         if(this.state.asoFirstPage === false && this.state.asoProductsAddPage === true) { 
+            this.setState({asoFirstPage : true , asoProductsAddPage : false})
+         } else if (this.state.asoFirstPage === true && this.state.asoProductsAddPage === false) { 
+            this.setState({asoFirstPage : false , asoProductsAddPage : true})
+         }
+     }
+    
     render() { 
+
+        let asoCurrentComponent = <AsoFirstPageContent products={this.state.products} brands={this.state.asoBrands} rooms={this.state.asoRooms} asoAdList={this.state.asoDefaultSubMenuAd} />;
+        if(this.state.asoFirstPage && !this.state.asoProductsAddPage) { 
+            asoCurrentComponent = <AsoFirstPageContent 
+                products={this.state.products} 
+                brands={this.state.asoBrands} 
+                rooms={this.state.asoRooms} 
+                asoAdList={this.state.asoDefaultSubMenuAd}
+                firstPage={this.state.asoFirstPage}
+                asoPageChange={this.asoPageChangeHandler}
+                 />
+        } else if (!this.state.asoFirstPage && this.state.asoProductsAddPage) { 
+            asoCurrentComponent = <AsoProductAdd 
+                products={this.state.products} 
+                brands={this.state.asoBrands} 
+                rooms={this.state.asoRooms} 
+                asoAdList={this.state.asoDefaultSubMenuAd}
+                firstPage={this.state.asoFirstPage}
+                asoPageChange={this.asoPageChangeHandler} />
+        }
+        
+
         return ( 
             <div className={"asoMainPage"}>
-                <AsoFirstPageContent products={this.state.products} />
-                <AsoNavbar 
-                    brands={this.state.asoBrands} 
-                    rooms={this.state.asoRooms} 
-                    defaultAd={this.state.asoDefaultSubMenuAd} />
-                <AsoFooter />
+                    {/* <AsoProductAdd products={this.state.products} brands={this.state.asoBrands} rooms={this.state.asoRooms} asoAdList={this.state.asoDefaultSubMenuAd} /> */}
+                    {/* <AsoFirstPageContent products={this.state.products} brands={this.state.asoBrands} rooms={this.state.asoRooms} asoAdList={this.state.asoDefaultSubMenuAd} /> */}
+                    {asoCurrentComponent}
             </div>
          );
     }
 }
  
 export default asoMainPage;
+

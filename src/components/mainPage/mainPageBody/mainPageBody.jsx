@@ -44,7 +44,7 @@ const mainPageBody = (props) => {
                     </div>
                 </div>
             </div>
-            <MainPageFooter style={{position: 'absolute', marginTop: 100}} />
+            <MainPageFooter style={{position: 'absolute', marginTop: 50}} />
         </div>
      );
 }

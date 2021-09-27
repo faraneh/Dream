@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './contactMe.css';
 import ContactMeInput from './contactMeInput/contactMeInput';
 import axios from '../../axios-orders';
-import emailjs from 'emailjs-com';
+// import emailjs from 'emailjs-com';
 // import { sendForm } from 'emailjs-com';
 import MainPageFooter from '../mainPage/mainPageFooter/mainPageFooter';
 import Navbar from '../navbar/navbar';
@@ -110,17 +110,22 @@ class ContactMe extends Component {
 
      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
      
-     contactMeHandler = async (event) => {
+     contactMeHandler = (event) => {
+
         event.preventDefault();
 
-        let testEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        let testEmail = /^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i;
         let emailValidation = testEmail.test(this.state.contactMe.email.value);
         let emailConflict = !emailValidation;
-        await this.setState({ emailIsNotValid : emailConflict });
+        this.setState({ emailIsNotValid : emailConflict });
         let contactMemailValidationFinal = !this.state.emailIsNotValid;
 
+        // console.log('4');
         
         if(this.state.formIsValid && contactMemailValidationFinal) { 
+
+            console.log('5');
+
              const message = {
                 name : this.state.contactMe.name.value,
                 email : this.state.contactMe.email.value,
@@ -128,12 +133,14 @@ class ContactMe extends Component {
                 message : this.state.contactMe.message.value,
              }
 
-             emailjs.sendForm('service_6tf9us4', 'template_xw5g8ld', message , 'user_KMoTiil2oiOhxeTrud4K9')
-             .then((result) => {
-                 console.log(result.text);
-             }, (error) => {
-                 console.log(error.text);
-             });
+            //  console.log('6');
+
+            //  emailjs.sendForm('service_6tf9us4', 'template_xw5g8ld', message , 'user_KMoTiil2oiOhxeTrud4K9')
+            //  .then((result) => {
+            //      console.log(result.text);
+            //  }, (error) => {
+            //      console.log(error.text);
+            //  });
     
              axios.post('/messages.json', message)
                 .then (response => {
@@ -144,6 +151,8 @@ class ContactMe extends Component {
                     this.setState({eraseValues : false});
                     console.log(error, message);
                 });
+
+                console.log('47');
 
                 const contactMeState = {...this.state.contactMe};
                 contactMeState.name.value = '';
@@ -196,7 +205,7 @@ class ContactMe extends Component {
             <Navbar className={'mainPageNavbarStyle'} /> 
             <div className="contactMeHeader"><div className="blueDot" style={{marginTop: 12}} /><h1>Let's talk</h1></div>
                 <div className="contactMeForm"  style={{display : display1}}>
-                    <form style={{width: '100%'}} onSubmit={() => this.contactMeHandler()} onReset={this.contactMeResetHandler} >
+                    <form style={{width: '100%'}} onSubmit={this.contactMeHandler} onReset={this.contactMeResetHandler} >
                         {formElementsArray.map(formElement => (
                             <ContactMeInput 
                                 key={formElement.id}
@@ -218,8 +227,8 @@ class ContactMe extends Component {
                 </div>
                 <div className="contactMeThankYou" style={{display : display2}}>
                     <h2 style={{color: 'rgb(57, 110, 255)', fontWeight: '800', marginBottom: 50}}>THANK YOU !</h2>
-                    <p style={{fontWeight: '300', fontSize: '1.1rem'}}>I just received your message. Thank you very much for writing to me. I will respond to you very soon</p>
-                    <p style={{fontWeight: '300', fontSize: '1.1rem'}}>Please check your email-box for the confirmation email.</p>
+                    <p style={{fontWeight: '300', fontSize: '1.1rem'}}>I just received your message. Thank you very much for writing to me. I will respond to you very soon.</p>
+                    {/* <p style={{fontWeight: '300', fontSize: '1.1rem'}}>Please check your email-box for the confirmation email.</p> */}
                 </div>
                 <MainPageFooter style={{position: 'relative'}} />
             </div> 

@@ -62,3 +62,12 @@
         z-index: 2;
     }
 }
+
+@media (min-width: 1250px) and (max-height: 830px) { 
+
+    .mainPageFooter { 
+        padding-top: 10px;
+        height: 4rem;
+        bottom: 0;
+    }
+}

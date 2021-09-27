@@ -14,10 +14,6 @@ class MainPage extends Component {
     render() { 
         return ( 
             <div className={'MainPage'}>
-                {/* there is a fixed navbar */}
-                {/* <Navbar /> */}
-                {/* relative body with contents */}
-                {/* <MainçPageBody /> */}
                 <Switch>
                     <Route path="/resume" component={Resume} />
                     <Route path="/projects" component={Projects} />
@@ -27,8 +23,6 @@ class MainPage extends Component {
                     <Route path="/contact-me" component={ContactMe} />
                     <Route path="/" exact component={MainPageBody} />
                 </Switch>
-                {/* and absolute footer */}
-                {/* <MainPageFooter /> */}
             </div>
          );
     }

@@ -3,6 +3,7 @@ import './asoNavbar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserCircle, faShoppingBag, faSearch, faAngleDown, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import AsoNavbarAdBox from './asoNavbarAdBox/asoNavbarAdBox';
+// import { Link } from "react-router-dom";
 
 
 
@@ -79,7 +80,7 @@ class asoNavbar extends Component {
             }
         }
 
-        const asoAdList = this.props.defaultAd;
+        const asoAdList = this.props.asoAdList;
         const asoAdDisplay = [];
         for(let el in asoAdList) { 
             asoAdDisplay.push(<AsoNavbarAdBox title={asoAdList[el][0]} image={asoAdList[el][1]} link={asoAdList[el][2]} key={el} />)
@@ -143,7 +144,8 @@ class asoNavbar extends Component {
                             <li><button onClick={() => this.asoNavbarMainSubMenuHandler('Brands')} onMouseEnter={() => this.asoNavbarMainSubMenuHandler('Brands')}>Brands<FontAwesomeIcon icon={faAngleDown} size="2x" style={{color: 'black', cursor: 'pointer', fontSize: 20, height: '0.9rem', marginLeft: 2}} /></button></li>
                             <li><button onClick={() => this.asoNavbarMainSubMenuHandler('')} onMouseEnter={() => this.asoNavbarMainSubMenuHandler('')}>Journals</button></li>
                             <li><button onClick={() => this.asoNavbarMainSubMenuHandler('')} onMouseEnter={() => this.asoNavbarMainSubMenuHandler('')}>Our Story</button></li>
-                            <li><button onClick={() => this.asoNavbarMainSubMenuHandler('')} onMouseEnter={() => this.asoNavbarMainSubMenuHandler('')}>Theme Features</button></li>
+                            {/* <li><Link to="/art-shop-add-products"><button onClick={() => this.asoNavbarMainSubMenuHandler('')} onMouseEnter={() => this.asoNavbarMainSubMenuHandler('')}>Add Products</button></Link></li> */}
+                            <li><button onClick={this.props.asoPageChange}>Add Product !</button></li>
                         </ul>
                     </div>
                     <div className="asoNavbarSecondLineSecondList">
@@ -160,19 +162,19 @@ class asoNavbar extends Component {
                                 null : 
                                 asoSubMenuList.splice(0,11).map((el, index) => 
                                 <div className={ index === this.state.asoSubMenuHoveredItem ? 'asoSubMenuListItemsActive' : 'asoSubMenuListItems'} 
-                                    onMouseEnter={() => this.asoSubMenuItemClassActiveHandler(index)} 
-                                    onMouseOut={() => this.asoSubMenuItemClassDeactiveHandler()} key={index} >{el}
-                                    
-                                <FontAwesomeIcon 
-                                    icon={faAngleRight} 
-                                    size="2x" 
-                                    style={{color: '#ccc', cursor: 'pointer', fontSize: '1rem', height: '3rem', marginLeft: 12, marginTop: -7, display: this.state.asoSubMenuHoveredItem === index ? 'block' : 'none'}} /></div>)
-                                .concat(<div className={'asoSubMenuListItemsMore'}>Click for more:</div>)}
+                                        onMouseEnter={() => this.asoSubMenuItemClassActiveHandler(index)} 
+                                        onMouseOut={() => this.asoSubMenuItemClassDeactiveHandler()}
+                                        key={`SubMenuAso + ${el}`}>
+                                    {el}
+                                    <FontAwesomeIcon 
+                                        icon={faAngleRight} 
+                                        size="2x" 
+                                        style={{color: '#ccc', cursor: 'pointer', fontSize: '1rem', height: '3rem', marginLeft: 12, marginTop: -7, display: this.state.asoSubMenuHoveredItem === index ? 'block' : 'none'}}  />
+                                </div>)
+                                .concat(<div className={'asoSubMenuListItemsMore'} key={'more'}>Click for more:</div>)}
                     </div>
                     <div className="asoNavbarSubMenuSecondDiv">
                         {asoAdDisplay}
-                        
-
                     </div>
                 </div>
             </div>

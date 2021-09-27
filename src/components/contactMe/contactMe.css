@@ -40,13 +40,14 @@
 }
 .contactMeThankYou {
     width: 700px;
-    min-height: 400px;
+    min-height: 500px;
     background-color: white;
     box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
     -webkit-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
     -moz-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
     margin: 20px auto 200px;
     padding: 50px;
+    padding-top: 130px;
     box-sizing: border-box;
     text-align: left;
 }
