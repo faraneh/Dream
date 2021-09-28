@@ -19,6 +19,7 @@
     -webkit-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
     -moz-box-shadow: -11px 9px 18px -1px rgba(105, 105, 105, 0.3);
     background-color: white;
+    /* border: 2px solid green; */
 }
 .projectBoxTitle { 
     margin-top: 150px;

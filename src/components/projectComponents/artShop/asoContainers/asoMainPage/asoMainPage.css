@@ -2,6 +2,7 @@
     position: relative;
     margin: 0 auto;
     padding: 0;
+    /* height: max-content; */
     min-height: 6500px;
     width: 100%;
     max-width: 1400px;

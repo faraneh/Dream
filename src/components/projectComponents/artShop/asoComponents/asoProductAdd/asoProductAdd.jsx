@@ -7,10 +7,9 @@ const asoProductAdd = (props) => {
     return ( 
         <React.Fragment>
             <div className="asoProductAdd">
-
                 <div className="asoProductAddBody">
-                    <form>
-                        <p style={{fontSize: 20, fontWeight: '700'}}>Add your new product here</p>
+                    <form className={'asoProductAddForm'}>
+                        <p style={{fontSize: 30, fontWeight: '700'}}>Add your new product here</p>
                         <label>
                             Category:
                             <input type="text" name="category" />
@@ -19,11 +18,11 @@ const asoProductAdd = (props) => {
                             Product name:
                             <input type="text" name="productName" />
                         </label>
+                        
                         <label>
                             Product SKU:
                             <input type="text" name="sku" />
                         </label>
-                        <hr />
                         <label>
                             Product color code:
                             <input type="text" name="colorCode" />
@@ -32,7 +31,6 @@ const asoProductAdd = (props) => {
                             Product barcode:
                             <input type="text" name="barcode" />
                         </label>
-                        <hr />
                         <label>
                             Main Image:
                             <input type="text" name="mainPic" />
@@ -49,12 +47,10 @@ const asoProductAdd = (props) => {
                             Image 4:
                             <input type="text" name="imageFour" />
                         </label>
-                        <hr />
                         <label>
                             Description :
                             <input type="textarea" name="desc" />
                         </label>
-                        <hr />
                         <label>
                             Qty :
                             <input type="text" name="qty" />
@@ -67,11 +63,14 @@ const asoProductAdd = (props) => {
                             Current Price :
                             <input type="text" name="currentPrice" />
                         </label>
+                        <div className="asoBtnArrange" style={{display: 'flex', flexFlow: 'row'}}>
                         <button className={'asoBtnSbmt'} type='submit'>SUBMIT</button>
+                        <button className={'asoBtnSbmt'} style={{backgroundColor: "#ccc", margin : '30px 10px'}} type='reset'>CLEAR</button>
+                        </div>
                     </form>
-                    
+                    <hr style={{border: 'none', borderTop : '1px solid #ccc', width: '80%'}} />
                 </div>
-                
+                <hr style={{border: 'none', borderTop : '1px solid #ccc', width: '80%', display: 'flex'}} />
             </div>
             
             <AsoNavbar 
