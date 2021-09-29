@@ -145,7 +145,7 @@ class asoNavbar extends Component {
                             <li><button onClick={() => this.asoNavbarMainSubMenuHandler('')} onMouseEnter={() => this.asoNavbarMainSubMenuHandler('')}>Journals</button></li>
                             <li><button onClick={() => this.asoNavbarMainSubMenuHandler('')} onMouseEnter={() => this.asoNavbarMainSubMenuHandler('')}>Our Story</button></li>
                             {/* <li><Link to="/art-shop-add-products"><button onClick={() => this.asoNavbarMainSubMenuHandler('')} onMouseEnter={() => this.asoNavbarMainSubMenuHandler('')}>Add Products</button></Link></li> */}
-                            <li><button onClick={this.props.asoPageChange}>Add Product !</button></li>
+                            <li className={'asoAddNewProduct'}><button onClick={this.props.asoPageChange}>Add Product !</button></li>
                         </ul>
                     </div>
                     <div className="asoNavbarSecondLineSecondList">

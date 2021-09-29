@@ -4,10 +4,10 @@ import './asoProductBox.css';
 const asoProductBox = (props) => {
 
     let asoProductPrice = ''
-    if(props.fullPrice === 0) { 
-        asoProductPrice = <p>${props.price.toFixed(2)}</p>
+    if(props.fullPrice == 0) { 
+        asoProductPrice = <p>${props.price}</p>
     } else { 
-        asoProductPrice = <p style={{color: 'grey'}}><s>${props.fullPrice.toFixed(2)}</s> <br /> <span style={{color: 'black', fontWeight: 600}}>${props.price.toFixed(2)}</span></p>
+        asoProductPrice = <p style={{color: 'grey'}}><s>${props.fullPrice}</s> <br /> <span style={{color: 'black', fontWeight: 600}}>${props.price}</span></p>
     }
 
     return ( 
