@@ -1,0 +1,87 @@
+.asoProductBoxWide { 
+    min-width:710px;
+    max-width: 710px;
+    height: 300px;
+    /* border: 1px solid #ccc; */
+    display: flex;
+    flex-flow: row;
+    margin: 10px auto;
+}
+.asoProductBoxWideOne { 
+    width: 300px;
+    border: 1px solid #ccc;
+}
+.asoProductBoxWideTwo { 
+    width: 400px;
+    padding : 40px;
+    border: 1px solid #ccc;
+}
+.asoProductBoxWideTwo h2 { 
+    text-align: left;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.asoProductBoxWide:hover .asoProductWideHoverButtons { 
+    display: flex;
+}
+.asoProductBoxWide:hover .asoProductWIdeTop { 
+    padding-top: 0px;
+    transition: padding 0.3s ease;
+}
+.asoProductBoxWide img { 
+    margin: 20px 5px 5px;
+}
+.asoProductBoxWide h3 { 
+    text-align: left;
+    margin: 10px 15px 0;
+    line-height: 1.5rem;
+}
+.asoProductBoxWide h6 { 
+    text-align: left;
+    margin: 0 15px 5px;
+    line-height: 1.5rem;
+}
+.asoProductBoxWide p { 
+    text-align: left;
+    margin: 0 15px;
+    line-height: 1.5rem;
+}
+.asoProductWideTop {
+    padding-top: 10px;
+    height: 290px;
+}
+
+.asoProductWideHoverButtons{
+    height: 100px;
+    padding: 0 5px;
+    margin: 0;
+    display: none;
+    flex-flow: column;
+    justify-content: space-evenly;
+}
+
+.asoProductBtn1Wide { 
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: 1px solid black;
+    box-shadow: none;
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+}
+.asoProductBtn1Wide:hover { 
+    transform: scale(1.05)
+}
+.asoProductBtn2Wide { 
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: none;
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+}
+.asoProductBtn2Wide:hover { 
+    transform: scale(1.05)
+}

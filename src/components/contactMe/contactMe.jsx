@@ -124,7 +124,7 @@ class ContactMe extends Component {
         
         if(this.state.formIsValid && contactMemailValidationFinal) { 
 
-            console.log('5');
+            // console.log('5');
 
              const message = {
                 name : this.state.contactMe.name.value,
@@ -152,7 +152,7 @@ class ContactMe extends Component {
                     console.log(error, message);
                 });
 
-                console.log('47');
+                // console.log('47');
 
                 const contactMeState = {...this.state.contactMe};
                 contactMeState.name.value = '';

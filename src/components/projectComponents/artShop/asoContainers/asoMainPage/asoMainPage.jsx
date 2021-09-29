@@ -3,6 +3,7 @@ import './asoMainPage.css';
 // import { Route, Switch } from 'react-router-dom';
 import AsoProductAdd from '../../asoComponents/asoProductAdd/asoProductAdd';
 import AsoFirstPageContent from '../../asoComponents/asoFirstPageContent/asoFirstPageContent';
+import axios from '../../../../../axios-orders';
 
 
 class asoMainPage extends Component {
@@ -89,9 +90,34 @@ class asoMainPage extends Component {
             },
 
         },
+        newProduct : { 
+            category: '',
+            productName : '',
+            sku : '',
+            colorCode : '',
+            barcode : '',
+            mainPic : '',
+            imageTwo : '',
+            imageThree : '',
+            imageFour : '',
+            desc : '',
+            qty : 0,
+            fullPrice : 0,
+            currentPrice : 0,
+        },
+        asoProductList : {},
         asoFirstPage : true,
         asoProductsAddPage : false,
      }
+
+    //  componentDidMount() { 
+    //      axios.get('/ProductList.json')
+    //      .then(res => {
+    //         const asoProductList = res.data;
+    //         this.setState({asoProductList});
+    //         console.log(this.state.asoProductList);
+    //      })
+    //  }
 
      asoPageChangeHandler = () => { 
          if(this.state.asoFirstPage === false && this.state.asoProductsAddPage === true) { 
@@ -100,6 +126,52 @@ class asoMainPage extends Component {
             this.setState({asoFirstPage : false , asoProductsAddPage : true})
          }
      }
+
+     ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+     AddProductSubmit = (e) => { 
+        e.preventDefault();
+
+        const newProductValues = {
+            category: this.state.newProduct.category,
+            productName : this.state.newProduct.productName,
+            sku : this.state.newProduct.sku,
+            colorCode : this.state.newProduct.colorCode,
+            barcode : this.state.newProduct.barcode,
+            mainPic : this.state.newProduct.mainPic,
+            imageTwo : this.state.newProduct.imageTwo,
+            imageThree : this.state.newProduct.imageThree,
+            imageFour : this.state.newProduct.imageFour,
+            desc : this.state.newProduct.desc,
+            qty : this.state.newProduct.qty,
+            fullPrice : this.state.newProduct.fullPrice,
+            currentPrice : this.state.newProduct.currentPrice,
+         }
+
+         axios.post('/ProductList.json', newProductValues)
+         .then (response => {
+             this.setState({eraseValues : true});
+             console.log(response, newProductValues);
+         })
+         .catch (error => {
+             this.setState({eraseValues : false});
+             console.log(error, newProductValues);
+         });
+
+     }
+
+      ////////////////////////////////////////////////////////////////////////////////////////////////////
+
+     ProductValueAddHandler = (e) => {
+         const asonewCat = e.target.name;
+         const asoNewVal = e.target.value;
+         const asoNewProduct = this.state.newProduct;
+         asoNewProduct[asonewCat] = asoNewVal;
+         this.setState({ newProduct : asoNewProduct});
+     }
+
+
+
     
     render() { 
 
@@ -120,7 +192,10 @@ class asoMainPage extends Component {
                 rooms={this.state.asoRooms} 
                 asoAdList={this.state.asoDefaultSubMenuAd}
                 firstPage={this.state.asoFirstPage}
-                asoPageChange={this.asoPageChangeHandler} />
+                asoPageChange={this.asoPageChangeHandler}
+                asoProductAddValueChanged={this.ProductValueAddHandler}
+                productValue={this.state.newProduct}
+                AddProductSubmit={this.AddProductSubmit} />
         }
         
 

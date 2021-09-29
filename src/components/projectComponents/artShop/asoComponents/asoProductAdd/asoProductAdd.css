@@ -2,35 +2,32 @@
     margin: 0 ;
     width: 100%;
     height: 2500px;
-    display: flex;
-    flex-direction: column;
     padding: 0;
+    padding-top: 200px;
     position: absolute;
-    /* border: 1px solid red; */
 }
 .asoProductAddBody { 
-    position: absolute;
     padding : 0px;
     width: 50%;
     min-height: 1000px;
-    margin: 280px auto;
+    margin: 50px auto;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    flex-flow: column;
     left: 0;
-    /* transform: translateX(-50%); */
-    /* border: 1px solid blue; */
+    border: 1px solid #ccc;
 }
 .asoProductAddBody p { 
-    text-align: left;
-    margin-left: 100px;
+    text-align: center;
 }
 .asoProductAddForm { 
     height: 1000px;
+}
+.asoProductAddForm form { 
     display: flex;
     flex-direction: column;
     flex-flow: column;
+}
+.asoProductPageHr { 
+    margin: 5px auto;
 }
 .asoProductAddBody label { 
     float: right;
@@ -40,8 +37,6 @@
     line-height: 40px;
     font-weight: 500;
     text-align: right;
-    /* border: 1px solid blue; */
-    /* border: 1px solid red; */
 }
 .asoProductAddBody label input { 
     width: 400px;
@@ -60,6 +55,13 @@
     border: none;
     border-radius: 3px;
     box-shadow : none;
+    cursor: pointer;
+}
+.asoProductAddProductList {
+    /* border: 1px solid orange; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
 }
 
 @media screen and (min-width: 650px) and (max-width:1400px) { 
