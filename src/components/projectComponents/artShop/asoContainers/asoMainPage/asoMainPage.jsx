@@ -133,7 +133,7 @@ class asoMainPage extends Component {
                  />
         } else if (!this.state.asoFirstPage && this.state.asoProductsAddPage) { 
             asoCurrentComponent = <AsoProductAdd 
-                products={this.state.products} 
+                products={this.state.asoProductList} 
                 brands={this.state.asoBrands} 
                 rooms={this.state.asoRooms} 
                 asoAdList={this.state.asoDefaultSubMenuAd}

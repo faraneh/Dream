@@ -141,7 +141,7 @@ class AsoFirstPageContent extends React.Component {
                 <div className="asoMainPageBrandNewSelections">
                     <button className="asoMainPageArrow" onClick={() => handleScroll('left')} ><FontAwesomeIcon icon={faChevronLeft} size="2x" style={{color: 'white', cursor: 'pointer'}} /></button>
                     <div className="asoMainPageBrandNewSelectionsCenter" ref={asoFirstRef}>
-                        {asoProductSample.map((el, index) => <AsoProductBox key={index} imageAdrs={el.mainPic} productTitle={el.ProductName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice}/> )}
+                        {asoProductSample.map((el, index) => <AsoProductBox key={index} imageAdrs={el.mainPic} productName={el.productName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice}/> )}
                     </div>
                     <button className="asoMainPageArrow" onClick={() => handleScroll('right')} ><FontAwesomeIcon icon={faChevronRight} size="2x" style={{color: 'white', cursor: 'pointer'}} /></button>
                 </div>
@@ -154,7 +154,7 @@ class AsoFirstPageContent extends React.Component {
                 <div className="asoMainPageBrandNewSelections">
                     <button className="asoMainPageArrow" onClick={() => handleScrollTwo('left')} ><FontAwesomeIcon icon={faChevronLeft} size="2x" style={{color: 'white', cursor: 'pointer'}} /></button>
                     <div className="asoMainPageBrandNewSelectionsCenter" ref={asoFirstRefTwo}>
-                        {asoProductSample.map((el, index) => <AsoProductBox key={index} imageAdrs={el.mainPic} productTitle={el.ProductName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice}/> )}
+                        {asoProductSample.map((el, index) => <AsoProductBox key={index} imageAdrs={el.mainPic} productName={el.productName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice}/> )}
                     </div>
                     <button className="asoMainPageArrow" onClick={() => handleScrollTwo('right')} ><FontAwesomeIcon icon={faChevronRight} size="2x" style={{color: 'white', cursor: 'pointer'}} /></button>
                 </div>
@@ -170,7 +170,7 @@ class AsoFirstPageContent extends React.Component {
                     </div>
                     <div className="asoRecognizedDesignersRight">
                     <div className="asoMainPageBrandNewSelectionsCenterZ">
-                        {asoProductSample.slice(0,9).map((el, index) => <AsoProductBox key={index} imageAdrs={el.mainPic} productTitle={el.ProductName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice}/> )}
+                        {asoProductSample.slice(0,9).map((el, index) => <AsoProductBox key={index} imageAdrs={el.mainPic} productName={el.productName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice}/> )}
                     </div>
                     </div>
                 </div>

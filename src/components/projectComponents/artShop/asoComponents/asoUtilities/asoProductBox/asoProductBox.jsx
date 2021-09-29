@@ -14,7 +14,7 @@ const asoProductBox = (props) => {
         <div className="asoProductBox">
             <div className="asoProductTop">
             <img src={props.imageAdrs} style={{width: 150, height: 150}} alt="product" />
-            <h3>{props.productTitle}</h3>
+            <h3>{props.productName}</h3>
             <h6>{props.category}</h6>
             {asoProductPrice}
             </div>

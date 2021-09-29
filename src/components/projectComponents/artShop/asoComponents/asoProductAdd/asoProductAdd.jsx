@@ -80,7 +80,7 @@ const asoProductAdd = (props) => {
                     {Object.values(props.products).map((el, index) => <AsoProductBoxWide 
                         key={index} 
                         imageAdrs={el.mainPic} 
-                        productTitle={el.ProductName} 
+                        productName={el.productName} 
                         category={el.category} 
                         price={el.currentPrice} 
                         fullPrice={el.fullPrice}/>)}
