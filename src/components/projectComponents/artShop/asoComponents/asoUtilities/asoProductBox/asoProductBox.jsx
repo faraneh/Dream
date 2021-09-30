@@ -20,7 +20,7 @@ const asoProductBox = (props) => {
             </div>
             <div className="asoProductHoverButtons">
                 <button className="asoProductBtn1 asoProductInfo">Quick Shop</button>
-                <button className="asoProductBtn2 asoQuickAddToCard">Details</button>
+                <button className="asoProductBtn2 asoQuickAddToCard"  onClick={() => props.asoGoToProductPage(props.productIndex)}>Details</button>
             </div>
         </div>
      );

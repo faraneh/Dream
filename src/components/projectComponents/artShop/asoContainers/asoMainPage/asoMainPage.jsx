@@ -4,6 +4,7 @@ import './asoMainPage.css';
 import AsoProductAdd from '../../asoComponents/asoProductAdd/asoProductAdd';
 import AsoFirstPageContent from '../../asoComponents/asoFirstPageContent/asoFirstPageContent';
 import axios from '../../../../../axios-orders';
+import AsoProductPage from '../../asoComponents/asoProductPage/asoProductPage';
 
 
 class asoMainPage extends Component {
@@ -33,6 +34,11 @@ class asoMainPage extends Component {
         asoProductList : {},
         asoFirstPage : true,
         asoProductsAddPage : false,
+        asoProductPage : false,
+        asoProduct : '',
+        asoCurrentProductImage : '',
+        asoImageFrame : '',
+        asoProductCount : 1,
      }
 
      ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -42,18 +48,21 @@ class asoMainPage extends Component {
          .then(res => {
             const asoProductList = res.data;
             this.setState({asoProductList});
-            console.log(this.state.asoProductList);
+            // console.log(this.state.asoProductList);
          })
+     }
+     componentWillUnmount() {
+        this.setState({asoProductList : ''});
      }
 
      ////////////////////////////////////////////////////////////////////////////////////////////////////
 
      asoPageChangeHandler = () => { 
-         if(this.state.asoFirstPage === false && this.state.asoProductsAddPage === true) { 
-            this.setState({asoFirstPage : true , asoProductsAddPage : false})
-         } else if (this.state.asoFirstPage === true && this.state.asoProductsAddPage === false) { 
-            this.setState({asoFirstPage : false , asoProductsAddPage : true})
-         }
+            this.setState({asoFirstPage : false , asoProductsAddPage : true, asoProductPage : false })
+     }
+
+     asoGoToHomePageHandler = () => { 
+            this.setState({asoFirstPage : true , asoProductsAddPage : false, asoProductPage : false })
      }
 
      ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -116,13 +125,66 @@ class asoMainPage extends Component {
          this.setState({ newProduct : asoNewProduct});
      }
 
+     ////////////////////////////////////////////////////////////////////////////////////////////////////
 
+     asoGoToProductPageHandler = (event) => {
+        window.scrollTo({
+            top: 200,
+            left: 0,
+            behavior: "smooth"
+          });
+        const asoProductList = Object.entries(this.state.asoProductList);
+        const asoProduct = asoProductList[event];
+        const asoFirstImage = asoProduct[1].mainPic;
+        this.setState({asoProduct : asoProduct, asoFirstPage : false , asoProductsAddPage : false, asoProductPage : true, asoImageFrame : asoFirstImage});
+     }
 
+     asoChangeProductMainPicHandler = (event) => { 
+        if(event === 'mainPic') { 
+            // return asoImageFrame = asoProduct.mainPic;
+            let asoCurrentImage = this.state.asoProduct[1].mainPic
+            this.setState({asoImageFrame : asoCurrentImage})
+        } else if (event ==='imageOne') { 
+            // return asoImageFrame = asoProduct.imageOne
+            let asoCurrentImage = this.state.asoProduct[1].imageOne
+            this.setState({asoImageFrame : asoCurrentImage})
+        } else if (event ==='imageTwo') { 
+            // return asoImageFrame = asoProduct.imageTwo
+            let asoCurrentImage = this.state.asoProduct[1].imageTwo
+            this.setState({asoImageFrame : asoCurrentImage})
+        } else if (event ==='imageThree') { 
+            // return asoImageFrame = asoProduct.imageThree
+            let asoCurrentImage = this.state.asoProduct[1].imageThree
+            this.setState({asoImageFrame : asoCurrentImage})
+        } else if (event ==='imageFour') { 
+            // return asoImageFrame = asoProduct.imageFour
+            let asoCurrentImage = this.state.asoProduct[1].imageFour
+            this.setState({asoImageFrame : asoCurrentImage})
+        }
+     }
+
+     asoCountChangeHandler = (e) => { 
+         e.preventDefault();
+
+         console.log(e.target.value);
+
+         let asoCurrentCount = this.state.asoProductCount;
+         
+         if(e.target.value === "+") { 
+            asoCurrentCount = asoCurrentCount + 1;
+            this.setState({asoProductCount : asoCurrentCount})
+         } else if(e.target.value === '-' && this.state.asoProductCount > 1) { 
+            asoCurrentCount = asoCurrentCount - 1;
+            this.setState({asoProductCount : asoCurrentCount})
+         }
+     }
+
+     ////////////////////////////////////////////////////////////////////////////////////////////////////
     
     render() { 
 
         let asoCurrentComponent = <AsoFirstPageContent products={this.state.products} brands={this.state.asoBrands} rooms={this.state.asoRooms} asoAdList={this.state.asoDefaultSubMenuAd} />;
-        if(this.state.asoFirstPage && !this.state.asoProductsAddPage) { 
+        if(this.state.asoFirstPage && !this.state.asoProductsAddPage && !this.state.asoProductPage) { 
             asoCurrentComponent = <AsoFirstPageContent 
                 products={this.state.asoProductList} 
                 brands={this.state.asoBrands} 
@@ -130,8 +192,10 @@ class asoMainPage extends Component {
                 asoAdList={this.state.asoDefaultSubMenuAd}
                 firstPage={this.state.asoFirstPage}
                 asoPageChange={this.asoPageChangeHandler}
+                asoGoToProductPage={this.asoGoToProductPageHandler} 
+                asoGoToHomePage={this.asoGoToHomePageHandler}
                  />
-        } else if (!this.state.asoFirstPage && this.state.asoProductsAddPage) { 
+        } else if (!this.state.asoFirstPage && this.state.asoProductsAddPage && !this.state.asoProductPage) { 
             asoCurrentComponent = <AsoProductAdd 
                 products={this.state.asoProductList} 
                 brands={this.state.asoBrands} 
@@ -141,7 +205,22 @@ class asoMainPage extends Component {
                 asoPageChange={this.asoPageChangeHandler}
                 asoProductAddValueChanged={this.ProductValueAddHandler}
                 productValue={this.state.newProduct}
-                AddProductSubmit={this.AddProductSubmit} />
+                AddProductSubmit={this.AddProductSubmit}
+                asoGoToHomePage={this.asoGoToHomePageHandler} />
+        } else if (!this.state.asoFirstPage && !this.state.asoProductsAddPage && this.state.asoProductPage) { 
+                asoCurrentComponent = <AsoProductPage
+                products={this.state.asoProductList} 
+                brands={this.state.asoBrands} 
+                rooms={this.state.asoRooms} 
+                asoAdList={this.state.asoDefaultSubMenuAd}
+                firstPage={this.state.asoFirstPage}
+                asoPageChange={this.asoPageChangeHandler}
+                asoGoToHomePage={this.asoGoToHomePageHandler}
+                product={this.state.asoProduct}
+                asoImageFrame={this.state.asoImageFrame}
+                asoChangeProductMainPic={this.asoChangeProductMainPicHandler}
+                asoProductCount={this.state.asoProductCount}
+                asoCountChange={this.asoCountChangeHandler} />
         }
         
 

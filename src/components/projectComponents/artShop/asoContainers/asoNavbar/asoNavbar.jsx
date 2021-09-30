@@ -122,7 +122,7 @@ class asoNavbar extends Component {
                             </ul>
                         </div>
                     </div>
-                    <div className="asoLogo">Art Shop</div>
+                    <div className="asoLogo" style={{display: this.state.asoHamburgerSideMenuActive ? 'none' : 'flex'}} onClick={this.props.asoGoToHomePage}>Art Shop</div>
                     <div className="asoSearchBar">
                         <form style={{width: '100%'}}>
                             <input className={"asoNavbarFormInput"} placeholder="What are you looking for ?"></input>

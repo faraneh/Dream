@@ -91,7 +91,8 @@ const asoProductAdd = (props) => {
                     brands={props.brands} 
                     rooms={props.rooms} 
                     asoAdList={props.asoAdList}
-                    asoPageChange={props.asoPageChange} />
+                    asoPageChange={props.asoPageChange}
+                    asoGoToHomePage={props.asoGoToHomePage} />
             <AsoFooter />
         </React.Fragment>
      );

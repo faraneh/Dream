@@ -69,6 +69,12 @@ class AsoFirstPageContent extends React.Component {
 
     return (
         <React.Fragment>
+            <AsoNavbar 
+                brands={this.props.brands} 
+                rooms={this.props.rooms} 
+                asoAdList={this.props.asoAdList}
+                asoPageChange={this.props.asoPageChange}
+                asoGoToHomePage={this.props.asoGoToHomePage} />
             <div className="asoFirstPageContent">
                 <div className="asoMainBanner">
                     {/* ////////////////////////////////////////////////////////////////////////////////////////// */}
@@ -141,7 +147,7 @@ class AsoFirstPageContent extends React.Component {
                 <div className="asoMainPageBrandNewSelections">
                     <button className="asoMainPageArrow" onClick={() => handleScroll('left')} ><FontAwesomeIcon icon={faChevronLeft} size="2x" style={{color: 'white', cursor: 'pointer'}} /></button>
                     <div className="asoMainPageBrandNewSelectionsCenter" ref={asoFirstRef}>
-                        {asoProductSample.map((el, index) => <AsoProductBox key={index} imageAdrs={el.mainPic} productName={el.productName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice}/> )}
+                        {asoProductSample.map((el, index) => <AsoProductBox key={index} productIndex={index} imageAdrs={el.mainPic} productName={el.productName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice} asoGoToProductPage={this.props.asoGoToProductPage} /> )}
                     </div>
                     <button className="asoMainPageArrow" onClick={() => handleScroll('right')} ><FontAwesomeIcon icon={faChevronRight} size="2x" style={{color: 'white', cursor: 'pointer'}} /></button>
                 </div>
@@ -154,7 +160,7 @@ class AsoFirstPageContent extends React.Component {
                 <div className="asoMainPageBrandNewSelections">
                     <button className="asoMainPageArrow" onClick={() => handleScrollTwo('left')} ><FontAwesomeIcon icon={faChevronLeft} size="2x" style={{color: 'white', cursor: 'pointer'}} /></button>
                     <div className="asoMainPageBrandNewSelectionsCenter" ref={asoFirstRefTwo}>
-                        {asoProductSample.map((el, index) => <AsoProductBox key={index} imageAdrs={el.mainPic} productName={el.productName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice}/> )}
+                        {asoProductSample.map((el, index) => <AsoProductBox key={index} productIndex={index} imageAdrs={el.mainPic} productName={el.productName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice} asoGoToProductPage={this.props.asoGoToProductPage} /> )}
                     </div>
                     <button className="asoMainPageArrow" onClick={() => handleScrollTwo('right')} ><FontAwesomeIcon icon={faChevronRight} size="2x" style={{color: 'white', cursor: 'pointer'}} /></button>
                 </div>
@@ -170,7 +176,7 @@ class AsoFirstPageContent extends React.Component {
                     </div>
                     <div className="asoRecognizedDesignersRight">
                     <div className="asoMainPageBrandNewSelectionsCenterZ">
-                        {asoProductSample.slice(0,9).map((el, index) => <AsoProductBox key={index} imageAdrs={el.mainPic} productName={el.productName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice}/> )}
+                        {asoProductSample.slice(0,9).map((el, index) => <AsoProductBox key={index} productIndex={index} imageAdrs={el.mainPic} productName={el.productName} category={el.category} price={el.currentPrice} fullPrice={el.fullPrice} asoGoToProductPage={this.props.asoGoToProductPage} /> )}
                     </div>
                     </div>
                 </div>
@@ -272,11 +278,7 @@ class AsoFirstPageContent extends React.Component {
                     </ul>
                 </div>
             </div>
-            <AsoNavbar 
-                        brands={this.props.brands} 
-                        rooms={this.props.rooms} 
-                        asoAdList={this.props.asoAdList}
-                        asoPageChange={this.props.asoPageChange}/>
+
             <AsoFooter />
             </React.Fragment>
         );
