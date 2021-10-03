@@ -11,12 +11,14 @@ const projectBox = (props) => {
         <div className={"projectBox"}>
             <div className="projectBoxLeft">
                 <div className="projectBoxLeftHeader">
+                <Link to={pathNameAdd} style={{width: '100%', margin: 0, padding: 0, display: 'flex'}}>
                     <div className="projectBoxLeftHeaderBlue"/>
                         <div className="projectBoxLeftHeaderTitle">
                                 {props.name}
                         </div>
+                        </Link>
                     </div>
-                
+                    
                 <div className="projectsDescription">
                     {props.description}
                 </div>
