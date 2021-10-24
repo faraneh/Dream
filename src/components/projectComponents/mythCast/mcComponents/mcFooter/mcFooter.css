@@ -1,0 +1,10 @@
+.mcFooter { 
+    width: 100%;
+    height: 15rem;
+    /* background-color: #ccc; */
+    padding: 50px 20px;
+    box-sizing: border-box;
+    margin: 0;
+    margin-top: -30px;
+    color: #ddd;
+}

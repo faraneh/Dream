@@ -1,0 +1,86 @@
+.mcNavbar { 
+    margin: 0;
+    width: 100%;
+    height: 1rem;
+    margin: 0px auto 50px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    color : white;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.mcLogo { 
+    width: 200px;
+    min-width:200px;
+    font-family: 'Qwigley', cursive;
+    margin: 0;
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 0.2rem;
+    font-weight:lighter;
+}
+.mcNavbarLinks  ul { 
+    display: none;
+    /* display: flex; */
+    flex-direction: row;
+    flex-flow: row;
+    height: 4rem;
+    margin: 0;
+}
+.mcNavbarLinks ul li { 
+    list-style: none;
+    margin: 0 15px;
+    line-height: 4rem;
+    font-size: 0.7rem;
+}
+
+
+@media (min-width: 800px) { 
+    .mcNavbar { 
+        width: 95%;
+        height: 4rem;
+        margin: 0px auto 100px;
+    }
+    .mcLogo { 
+        width: 200px;
+        min-width:200px;
+        font-family: 'Qwigley', cursive;
+        margin: 0;
+        font-size: 1.5rem;
+        line-height: 0.2rem;
+        font-weight:lighter;
+    }
+    .mcNavbarLinks  ul { 
+        display: flex;
+    }
+    .mcNavbarLinks ul li { 
+        margin: 0 25px;
+        font-size: 0.7rem;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .mcNavbar { 
+        width: 80%;
+        height: 4rem;
+        margin: 0px auto 100px;
+    }
+    .mcLogo { 
+        width: 200px;
+        min-width:200px;
+        font-family: 'Qwigley', cursive;
+        margin: 0;
+        font-size: 1.5rem;
+        line-height: 0.2rem;
+        font-weight:lighter;
+    }
+    .mcNavbarLinks  ul { 
+        display: flex;
+    }
+    .mcNavbarLinks ul li { 
+        margin: 0 25px;
+        font-size: 0.9rem;
+    }
+}

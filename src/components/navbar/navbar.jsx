@@ -5,10 +5,10 @@ import { NavLink } from 'react-router-dom';
 const navbar = (props) => {
     return (
         <div className="navbar">
-            <div className="Logo" style={{display: 'flex', flexFlow: 'row', textAlign: 'center', height: '3rem', padding: 15, minWidth: 230}}>
+            <div className="Logo" style={{display: 'flex', flexFlow: 'row', textAlign: 'center', height: '3rem', padding: 15}}>
                 <div className="blueDot" />
                     <NavLink to= "/" exact style={{ textDecoration: 'none', color : 'black', display: 'flex' }} >
-                        <p style={{marginTop: 5, fontWeight: '900', fontSize: '1.7rem', lineHeight: '1rem'}}>Farane Javadi &nbsp; &nbsp; </p>
+                        <p style={{marginTop: 5, fontWeight: '900', fontSize: '1.7rem', lineHeight: '1rem', minWidth: 200}}>Farane Javadi &nbsp; &nbsp; </p>
                         <p style={{fontWeight: '300', fontSize: '1.2rem', marginTop: 3}} className={'FrontEndDeveloperNavbar'}>  / &nbsp; &nbsp;FRONT END DEVELOPER</p>
                     </NavLink>
             </div>

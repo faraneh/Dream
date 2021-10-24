@@ -17,14 +17,20 @@ class Projects extends Component {
             {
                 name: 'Art Shop',
                 description: 'This project is only first page of an e-commerce, made by react. as it has sample products its kept in local state, but in short future the complete project will be uploaded here with dynamic product input and multi pages.',
-                imageURL: 'https://images.unsplash.com/photo-1508403233766-d611abbd37c5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+                imageURL: 'https://images.unsplash.com/photo-1597816131251-a916004358c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3000&q=80',
                 componentName: '/art-shop',
             },
             {
                 name: 'Travel blog',
-                description: 'This One-page website is made 100% with Reactjs components, as its only a template, post datas has been saved in internal states. for more information please click the image :',
-                imageURL: 'https://images.unsplash.com/photo-1471970394675-613138e45da3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80',
+                description: 'This One-page website is made 100% with Reactjs components, as its only a template, post datas has been saved in internal states.',
+                imageURL: 'https://images.unsplash.com/photo-1587132117816-061b35073a4e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3880&q=80',
                 componentName: '/travel-blog',
+            },
+            {
+                name: 'Myth Cast',
+                description: 'The MythCast is designed in Figma and created with reactjs :',
+                imageURL: 'https://images.unsplash.com/photo-1632965053530-2475c7b91f58?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2656&q=80',
+                componentName: '/myth-cast',
             }
         ],
      }

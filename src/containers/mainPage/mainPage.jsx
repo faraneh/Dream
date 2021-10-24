@@ -8,6 +8,7 @@ import Projects from '../../components/projects/projects';
 import Todolist from '../../components/projectComponents/todolist/todoList';
 import TravelBlog from '../../components/projectComponents/travelBlog/travelBlog';
 import ArtShop from '../../components/projectComponents/artShop/artShop';
+import MythCast from '../../components/projectComponents/mythCast/mythCast';
 
 class MainPage extends Component {
     state = { }
@@ -19,6 +20,7 @@ class MainPage extends Component {
                     <Route path="/projects" component={Projects} />
                     <Route path="/todolist" component={Todolist} />
                     <Route path="/travel-blog" component={TravelBlog} />
+                    <Route path="/myth-cast" component={MythCast} />
                     <Route path="/art-shop" component={ArtShop} />
                     <Route path="/contact-me" component={ContactMe} />
                     <Route path="/" exact component={MainPageBody} />

@@ -1,0 +1,634 @@
+.mcPodcastBox { 
+    margin: 0;
+}
+.mcEpisodeBox { 
+    width: 90%;
+    height: 240px;
+    margin: 0 auto 40px;
+    border-radius: 20px;
+    background: #f6f6f6;
+    background: #f6f6f6;
+    box-shadow:  6px 6px 15px #a3a3a3,
+    -6px -6px 20px #ffffff;
+}
+
+.mcEpisodeBoxLeft { 
+  width: 200px;
+  height: 220px;
+  padding:0 15px;
+  margin: 10px 15px 10px 10px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.mcEpisodeBoxRight { 
+    height: 100%;
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+.mcEpisodeBoxRightTitle { 
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 25px 0 15px;
+}
+.mcEpisodeBoxRightDesc { 
+    font-weight: 200;
+    max-width: 95%;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 0.7rem;
+}
+
+.mcPlayer { 
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mcForwardBackward { 
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: rgb(41, 41, 41);
+    line-height: 1.5rem;
+}
+.mcPlayPause {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0 5px 0 6px;
+}
+.mcPlayer div p { 
+    line-height: 1.9rem;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+}
+/* .mcPlayer div input { 
+    height: 1.5rem;
+} */
+.mcCurrentTime { 
+    margin-left: 25px;
+}
+.progressBar {
+    --bar-bg: #a8a8a8;
+    --seek-before-width: 0;
+    --seek-before-color: #fc8080;
+    --knobby: #3f3f3f;
+    --selectedKnobby: #e00000;
+
+  
+    appearance: none;
+    background: var(--bar-bg);;
+    border-radius: 10px;
+    position: relative;
+    width: 70%;
+    height: 5px;
+    outline: none;
+    margin: 0.8rem;
+  }
+
+  
+  /* progress bar - safari */
+  .progressBar::-webkit-slider-runnable-track {
+    background: var(--bar-bg);;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    outline: none;
+  }
+  
+  /* progress bar - firefox */
+  .progressBar::-moz-range-track {
+    background: var(--bar-bg);;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    outline: none;
+  }
+  
+  .progressBar::-moz-focus-outer {
+    border: 0;
+  }
+  
+  /* progress bar - chrome and safari */
+  .progressBar::before {
+    content: '';
+    height: 5px;
+    width: var(--seek-before-width);
+    background-color: var(--seek-before-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  /* progress bar - firefox */
+  .progressBar::-moz-range-progress {
+    background-color: var(--seek-before-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 5px;
+  }
+  
+  /* knobby - chrome and safari */
+  .progressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--knobby);
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-5px);
+    margin: 0;
+    z-index: 3;
+    box-sizing: border-box;
+  }
+  
+  /* knobby while dragging - chrome and safari */
+  .progressBar:active::-webkit-slider-thumb {
+    /* transform: scale(1.2); */
+    background-color: var(--selectedKnobby);
+  }
+  
+  /* knobby - firefox */
+  .progressBar::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: transparent;
+    background-color: var(--knobby);
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    box-sizing: border-box;
+  }
+  
+  /* knobby while dragging - firefox */
+  .progressBar:active::-moz-range-thumb {
+    transform: scale(1.2);
+    background: var(--selectedKnobby);
+  }
+  .mcEpisodeBoxRightTopDetail { 
+    display: none;
+  }
+  .mcPlayingControls { 
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    text-align: center;
+  }
+  .mcPlayingBox {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .mcPlayingBar {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (min-width: 700px) {
+  .mcPodcastBox { 
+    margin: 0;
+}
+.mcEpisodeBox { 
+    width: 780px;
+    height: 240px;
+    margin: 0 auto 40px;
+    border-radius: 20px;
+    background: #f6f6f6;
+    background: #f6f6f6;
+    box-shadow:  6px 6px 15px #a3a3a3,
+    -6px -6px 20px #ffffff;
+}
+
+.mcEpisodeBoxLeft { 
+  min-width: 220px;
+  min-height: 220px;
+  padding:0 15px;
+  margin: 10px 15px 10px 10px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.mcEpisodeBoxRight { 
+    height: 100%;
+    width: 80%;
+    text-align: left;
+}
+.mcEpisodeBoxRightTitle { 
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 25px 0 15px;
+}
+.mcEpisodeBoxRightDesc { 
+    font-weight: 200;
+    max-width: 95%;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+.mcPlayer { 
+    margin: 0;
+    display: flex;
+    width: 600px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.mcForwardBackward { 
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: rgb(41, 41, 41);
+    line-height: 1.5rem;
+}
+.mcPlayPause {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0 5px 0 6px;
+}
+.mcPlayer div p { 
+    line-height: 1.9rem;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+}
+/* .mcPlayer div input { 
+    height: 1.5rem;
+} */
+.mcCurrentTime { 
+    margin-left: 25px;
+}
+.progressBar {
+    --bar-bg: #a8a8a8;
+    --seek-before-width: 0;
+    --seek-before-color: #fc8080;
+    --knobby: #3f3f3f;
+    --selectedKnobby: #e00000;
+
+  
+    appearance: none;
+    background: var(--bar-bg);;
+    border-radius: 10px;
+    position: relative;
+    width: 280px;
+    height: 5px;
+    outline: none;
+    margin: 0.8rem;
+  }
+  
+  /* progress bar - safari */
+  .progressBar::-webkit-slider-runnable-track {
+    background: var(--bar-bg);;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    outline: none;
+  }
+  
+  /* progress bar - firefox */
+  .progressBar::-moz-range-track {
+    background: var(--bar-bg);;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    outline: none;
+  }
+  
+  .progressBar::-moz-focus-outer {
+    border: 0;
+  }
+  
+  /* progress bar - chrome and safari */
+  .progressBar::before {
+    content: '';
+    height: 5px;
+    width: var(--seek-before-width);
+    background-color: var(--seek-before-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  /* progress bar - firefox */
+  .progressBar::-moz-range-progress {
+    background-color: var(--seek-before-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 5px;
+  }
+  
+  /* knobby - chrome and safari */
+  .progressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--knobby);
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-5px);
+    margin: 0;
+    z-index: 3;
+    box-sizing: border-box;
+  }
+  
+  /* knobby while dragging - chrome and safari */
+  .progressBar:active::-webkit-slider-thumb {
+    /* transform: scale(1.2); */
+    background-color: var(--selectedKnobby);
+  }
+  
+  /* knobby - firefox */
+  .progressBar::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: transparent;
+    background-color: var(--knobby);
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    box-sizing: border-box;
+  }
+  
+  /* knobby while dragging - firefox */
+  .progressBar:active::-moz-range-thumb {
+    transform: scale(1.2);
+    background: var(--selectedKnobby);
+  }
+  .mcEpisodeBoxRightTopDetail { 
+    display: flex;
+  }
+  .mcPlayingControls { 
+    display: flex;
+    flex-direction: row;
+    max-width: 100px;
+    margin: auto;
+    height: 2rem;
+    /* border: 1px solid red; */
+  }
+  .mcPlayingBox {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    max-height: 2rem;
+    /* border: 1px solid red; */
+  }
+  .mcPlayingBar {
+    display: flex;
+    flex-direction: row;
+      }
+}
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media (min-width: 1000px) { 
+  .mcPodcastBox { 
+    margin: 0;
+}
+.mcEpisodeBox { 
+    width: 780px;
+    height: 240px;
+    margin: 0 auto 40px;
+    border-radius: 20px;
+    background: #f6f6f6;
+    background: #f6f6f6;
+    box-shadow:  6px 6px 15px #a3a3a3,
+    -6px -6px 20px #ffffff;
+}
+
+.mcEpisodeBoxLeft { 
+  width: 220px;
+  height: 220px;
+  padding:0 15px;
+  margin: 10px 15px 10px 10px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.mcEpisodeBoxRight { 
+    height: 100%;
+    width: 80%;
+    text-align: left;
+}
+.mcEpisodeBoxRightTitle { 
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 25px 0 15px;
+}
+.mcEpisodeBoxRightDesc { 
+    font-weight: 200;
+    max-width: 95%;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 0.95rem;
+}
+
+.mcPlayer { 
+    margin: 0;
+    display: flex;
+    width: 600px;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.mcForwardBackward { 
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    color: rgb(41, 41, 41);
+    line-height: 1.5rem;
+}
+.mcPlayPause {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 0 5px 0 6px;
+}
+.mcPlayer div p { 
+    line-height: 1.9rem;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+}
+/* .mcPlayer div input { 
+    height: 1.5rem;
+} */
+.mcCurrentTime { 
+    margin-left: 25px;
+}
+.progressBar {
+    --bar-bg: #a8a8a8;
+    --seek-before-width: 0;
+    --seek-before-color: #fc8080;
+    --knobby: #3f3f3f;
+    --selectedKnobby: #e00000;
+
+  
+    appearance: none;
+    background: var(--bar-bg);;
+    border-radius: 10px;
+    position: relative;
+    width: 280px;
+    height: 5px;
+    outline: none;
+    margin: 0.8rem;
+  }
+  
+  /* progress bar - safari */
+  .progressBar::-webkit-slider-runnable-track {
+    background: var(--bar-bg);;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    outline: none;
+  }
+  
+  /* progress bar - firefox */
+  .progressBar::-moz-range-track {
+    background: var(--bar-bg);;
+    border-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 5px;
+    outline: none;
+  }
+  
+  .progressBar::-moz-focus-outer {
+    border: 0;
+  }
+  
+  /* progress bar - chrome and safari */
+  .progressBar::before {
+    content: '';
+    height: 5px;
+    width: var(--seek-before-width);
+    background-color: var(--seek-before-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+  }
+  
+  /* progress bar - firefox */
+  .progressBar::-moz-range-progress {
+    background-color: var(--seek-before-color);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 5px;
+  }
+  
+  /* knobby - chrome and safari */
+  .progressBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--knobby);
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-5px);
+    margin: 0;
+    z-index: 3;
+    box-sizing: border-box;
+  }
+  
+  /* knobby while dragging - chrome and safari */
+  .progressBar:active::-webkit-slider-thumb {
+    /* transform: scale(1.2); */
+    background-color: var(--selectedKnobby);
+  }
+  
+  /* knobby - firefox */
+  .progressBar::-moz-range-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: transparent;
+    background-color: var(--knobby);
+    cursor: pointer;
+    position: relative;
+    z-index: 3;
+    box-sizing: border-box;
+  }
+  
+  /* knobby while dragging - firefox */
+  .progressBar:active::-moz-range-thumb {
+    transform: scale(1.2);
+    background: var(--selectedKnobby);
+  }
+  .mcEpisodeBoxRightTopDetail { 
+    display: flex;
+  }
+  .mcPlayingControls { 
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin: auto;
+  }
+  .mcPlayingBox {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .mcPlayingBar {
+    display: flex;
+    flex-direction: row;
+  }
+}

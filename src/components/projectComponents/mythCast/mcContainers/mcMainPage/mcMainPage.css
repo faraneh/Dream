@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+/* font-family: 'Qwigley', cursive; */
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.McMainPage { 
+    margin: 0;
+    min-height: 1000px;
+    background-color: rgb(46, 46, 46);
+    padding: 0;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.McMainPageTop { 
+    min-height: 300px;
+    width: 100%;
+    background-color: transparent;
+    box-sizing: border-box;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.mcChannel { 
+    width: 100%;
+    height: 640px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    box-sizing: border-box;
+}
+.mcChannelLeft { 
+    min-width: 210px;
+    min-height: 250px;
+    box-sizing: border-box;
+    padding: 0;
+}
+.mcmcChannelImg {
+    background-image: URL('https://images.unsplash.com/photo-1561570541-aaba21a3ecf0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2080&q=80');
+    width: 210px;
+    height: 210px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border:rgb(46, 46, 46);
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.884);
+}
+.mcChannelRight { 
+    width:auto;
+    height: 320px;
+    text-align: center;
+    padding: 20px 35px;
+    box-sizing: border-box;
+}
+.mcmcChannelName h1 { 
+    color: white;
+}
+.mcmcChannelDesc p { 
+    color: rgb(246, 246, 246);
+    font-weight: 200;
+    line-height: 1.5rem;
+}
+.mcChannelRight button { 
+    background-color: rgb(187, 255, 28);
+    border: none;
+    box-shadow: none;
+    width: 170px;
+    height: 40px;
+    color: black;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+.mcChannelLinks { 
+    height: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row;
+    color: rgb(246, 246, 246);
+    margin-top: 15px;
+    width: 250px;
+    margin: 20px auto 10px;
+}
+.mcChannelLinks p { 
+    line-height: 2rem;
+    margin: 0 20px 0 0;
+}
+
+
+.McMainPageBody {
+    position: relative;
+    margin: 0;
+    min-height: 1700px;
+    width: 100%;
+    background-color: rgb(246, 246, 246);
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+.SeeMore {
+    background-color: rgb(187, 255, 28);
+    border: none;
+    box-shadow: none;
+    width: 170px;
+    height: 40px;
+    color: black;
+    border-radius: 20px;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin: 40px 0 0 0 ;
+    cursor: pointer;
+}
+.mcListenNow { 
+    width: 90%;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media (min-width: 700px) { 
+    .McMainPage { 
+        margin: 0;
+        min-height: 1000px;
+        background-color: rgb(46, 46, 46);
+        padding: 0;
+        padding-top: 50px;
+        box-sizing: border-box;
+    }
+    
+    .McMainPageTop { 
+        min-height: 300px;
+        width: 100%;
+        background-color: transparent;
+        box-sizing: border-box;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .mcChannel { 
+        width: 95%;
+        height: 250px;
+        margin: auto;
+        margin-right: 1%;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        box-sizing: border-box;
+    }
+    .mcChannelLeft { 
+        min-width: 250px;
+        min-height: 250px;
+        box-sizing: border-box;
+    }
+    .mcmcChannelImg {
+        background-image: URL('https://images.unsplash.com/photo-1561570541-aaba21a3ecf0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2080&q=80');
+        width: 240px;
+        height: 240px;
+        margin: 5px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        border:rgb(46, 46, 46);
+        border-radius: 5px;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.884);
+        box-sizing: border-box;
+    }
+    .mcChannelRight { 
+        width:auto;
+        height: 250px;
+        text-align: left;
+        padding: 5px 35px;
+        box-sizing: border-box;
+    }
+    .mcmcChannelName h1 { 
+        color: white;
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    .mcmcChannelDesc p { 
+        color: rgb(246, 246, 246);
+        font-weight: 200;
+        line-height: 1.3rem;
+        font-size: 0.9rem;
+    }
+    .mcChannelRight button { 
+        background-color: rgb(187, 255, 28);
+        border: none;
+        box-shadow: none;
+        width: 140px;
+        height: 30px;
+        color: black;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 1.2rem;
+        margin: 5px 0 0 0;
+    }
+    .mcChannelLinks { 
+        height: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        color: rgb(246, 246, 246);
+        margin-top: 15px;
+        width: 100%;
+    }
+    .mcChannelLinks p { 
+        line-height: 2rem;
+        margin: 0 20px 0 0;
+        font-size: 0.9rem;
+    }
+    
+    
+    .McMainPageBody {
+        position: relative;
+        margin: 0;
+        min-height: 1800px;
+        width: 100%;
+        background-color: rgb(246, 246, 246);
+        box-sizing: border-box;
+        padding-top: 30px;
+    }
+    
+    .SeeMore {
+        background-color: rgb(187, 255, 28);
+        border: none;
+        box-shadow: none;
+        width: 170px;
+        height: 40px;
+        color: black;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 1.2rem;
+        margin: 40px 0 0 0 ;
+        cursor: pointer;
+    }
+    .mcListenNow { 
+        width: 730px;
+    }
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media (min-width: 1000px) { 
+    .McMainPage { 
+        margin: 0;
+        min-height: 1000px;
+        background-color: rgb(46, 46, 46);
+        padding: 0;
+        padding-top: 50px;
+        box-sizing: border-box;
+    }
+    
+    .McMainPageTop { 
+        min-height: 300px;
+        width: 100%;
+        background-color: transparent;
+        box-sizing: border-box;
+        max-width: 1000px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .mcChannel { 
+        width: 90%;
+        height: 320px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        box-sizing: border-box;
+    }
+    .mcChannelLeft { 
+        min-width: 320px;
+        min-height: 320px;
+        box-sizing: border-box;
+    }
+    .mcmcChannelImg {
+        background-image: URL('https://images.unsplash.com/photo-1561570541-aaba21a3ecf0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2080&q=80');
+        width: 320px;
+        height: 320px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:cover;
+        border:rgb(46, 46, 46);
+        border-radius: 5px;
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.884);
+    }
+    .mcChannelRight { 
+        width:auto;
+        height: 320px;
+        text-align: left;
+        padding: 20px 35px;
+        box-sizing: border-box;
+    }
+    .mcmcChannelName h1 { 
+        color: white;
+    }
+    .mcmcChannelDesc p { 
+        color: rgb(246, 246, 246);
+        font-weight: 200;
+        line-height: 1.5rem;
+    }
+    .mcChannelRight button { 
+        background-color: rgb(187, 255, 28);
+        border: none;
+        box-shadow: none;
+        width: 170px;
+        height: 40px;
+        color: black;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+    .mcChannelLinks { 
+        height: 2rem;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row;
+        color: rgb(246, 246, 246);
+        margin-top: 15px;
+        width: 100%;
+    }
+    .mcChannelLinks p { 
+        line-height: 2rem;
+        margin: 0 20px 0 0;
+    }
+    
+    
+    .McMainPageBody {
+        position: relative;
+        margin: 0;
+        min-height: 1800px;
+        width: 100%;
+        background-color: rgb(246, 246, 246);
+        box-sizing: border-box;
+        padding-top: 30px;
+    }
+    
+    .SeeMore {
+        background-color: rgb(187, 255, 28);
+        border: none;
+        box-shadow: none;
+        width: 170px;
+        height: 40px;
+        color: black;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 1.2rem;
+        margin: 40px 0 0 0 ;
+        cursor: pointer;
+    }
+    .mcListenNow { 
+        width: 730px;
+    }
+}
